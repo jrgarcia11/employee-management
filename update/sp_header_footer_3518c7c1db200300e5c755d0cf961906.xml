@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.headerFooter {
+  min-width:100%;
+  min-height: 12px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding-top: 2px;
+  padding-bottom: 6px;
+}
+
+@media only screen and (max-width:700px) {
+	.headerFooter {
+    min-height:5px;
+    padding-bottom:3px;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>emp_footer</id>
+        <internal>false</internal>
+        <link/>
+        <name>EMP Footer</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-11 15:55:24</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3518c7c1db200300e5c755d0cf961906</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>EMP Footer</sys_name>
+        <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
+        <sys_update_name>sp_header_footer_3518c7c1db200300e5c755d0cf961906</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-11 16:48:50</sys_updated_on>
+        <template><![CDATA[<div class="headerFooter">
+  <hr style="margin:0px;">
+  <hr style="margin:0px; margin-top:2px;">
+</div>]]></template>
+    </sp_header_footer>
+</record_update>

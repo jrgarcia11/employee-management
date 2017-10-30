@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="name" label="Name" language="en" table="x_134426_emp_personnel_asset">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <help/>
+            <hint/>
+            <label>Name</label>
+            <language>en</language>
+            <name>x_134426_emp_personnel_asset</name>
+            <plural>Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-07-28 21:15:20</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>ed8b0c7cdb144300e5c755d0cf96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Name</sys_name>
+            <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
+            <sys_update_name>sys_documentation_x_134426_emp_personnel_asset_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-07-28 21:15:20</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

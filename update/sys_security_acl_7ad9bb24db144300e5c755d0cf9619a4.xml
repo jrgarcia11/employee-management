@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description>Default access control on x_134426_emp_user</description>
+        <name>x_134426_emp_user</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[//If user is emp.employee and view their own record, allow.
+if(gs.hasRole('x_134426_emp.employee') && current.system_user == gs.getUserID()) {
+	answer = true;
+}
+
+//If user is emp.admin, allow.
+if(gs.hasRole('x_134426_emp.admin')) {
+	answer = true;
+}]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-28 19:58:08</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>7ad9bb24db144300e5c755d0cf9619a4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_134426_emp_user</sys_name>
+        <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
+        <sys_update_name>sys_security_acl_7ad9bb24db144300e5c755d0cf9619a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-11 22:18:17</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

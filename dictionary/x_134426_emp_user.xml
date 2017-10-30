@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="EMP User" max_length="40" name="x_134426_emp_user" type="collection">
+        <element label="Contact Email" max_length="400" name="contact_email" type="string"/>
+        <element label="Employed Since" max_length="40" name="employed_since" type="glide_date_time"/>
+        <element display="true" label="Full Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element label="System User" max_length="32" name="system_user" reference="sys_user" type="reference"/>
+        <element choice="3" label="User Class" mandatory="true" max_length="40" name="user_class" type="choice">
+            <choice>
+                <element label="Potential Employee" sequence="0" value="potential_employee"/>
+                <element label="Employee" sequence="1" value="employee"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="system_user"/>
+        </index>
+    </element>
+</database>

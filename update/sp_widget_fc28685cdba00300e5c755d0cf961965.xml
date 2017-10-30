@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope, $window) {
+  /* widget controller */
+  var c = this;
+	
+	c.emp_user = {
+  displayValue: "",
+  value: "",
+  name: 'emp_user_field'
+  };
+	
+	$scope.test = function() {
+		console.log(c.emp_user);
+	}
+	
+	$scope.send = function() {
+		$scope.data.emp_user = c.emp_user;
+		c.server.update();
+	}
+	
+	$scope.windowReturn = function() {
+		$window.location.reload();
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.fade {
+  opacity: 1;
+  transition:all .3s linear;
+}
+.fade.ng-hide {
+  opacity: 0;
+}
+.fade.ng-hide-remove {
+  transition: all .3s linear;
+  display: block !important;
+}
+
+.submitButton {
+	float:right;
+}
+
+@media only screen and (max-width:767px) {
+	.submitButton {
+    margin-top:10px;
+  	float:none;
+    width:100%;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>emp_send_hire_form</id>
+        <internal>false</internal>
+        <link/>
+        <name>EMP Send Hire Form</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	
+	//Set data sent flag.
+	data.sent = false;
+	
+	//If data is being sent from the client.
+	if(input) {
+		//Get input user data.
+		data.emp_user = input.emp_user;
+		
+		//Get selected emp_user record.
+		var userRec = new GlideRecord('x_134426_emp_user');
+		userRec.get(data.emp_user.value);
+		
+		//Start processing workflow.
+		var workflow = new global.Workflow();
+		var wfID = workflow.getWorkflowFromName('Applicant Processing');
+		var vars = {};
+		var wfContext = workflow.startFlow(wfID, userRec, userRec.operation(), vars);
+		
+		//Set data sent flag and display success message.
+		data.sent = true;
+		gs.addInfoMessage('Evaluation Sent');
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-08 20:19:04</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>fc28685cdba00300e5c755d0cf961965</sys_id>
+        <sys_mod_count>84</sys_mod_count>
+        <sys_name>EMP Send Hire Form</sys_name>
+        <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
+        <sys_update_name>sp_widget_fc28685cdba00300e5c755d0cf961965</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-10 21:28:00</sys_updated_on>
+        <template><![CDATA[<!--Submit Main Page-->
+<div ng-if="data.sent == false" class="outerShell">
+  <div class="header">
+    <h1 class="primaryHeader">
+      Send Asset Evaluation to Applicant
+    </h1>
+    
+    <hr style="margin:0px">
+    
+  </div>
+  
+  <!--Main Content Body-->
+  <div class="contentBody">
+    <!--EMP User Choice-->
+    <div class="refChoose">
+      <h2 class="secondaryHeader">
+      	Choose Potential Hire
+    	</h2>
+      
+      <hr style="margin:0px"><br>
+      
+      <sn-record-picker class="referenceField" field="c.emp_user" table="'x_134426_emp_user'" 
+                         display-field="'full_name'" display-fields="'contact_email'" 
+                         value-field="'sys_id'" search-fields="'name'" page-size="100" 
+                         placeholder="Potential Hire" default-query="'user_class=potential_employee'">
+      </sn-record-picker>
+    </div>
+    <!--Confirm and Send-->
+    <div ng-show="c.emp_user.value != ''" class="msgReview fade">
+      <h2 class="secondaryHeader">
+      	Confirm
+    	</h2>
+      
+      <hr style="margin:0px">
+      
+      <h4>
+        Send asset evaluation form to {{c.emp_user.displayValue}}?<br><br>
+        This will allow the recipient to edit their personnel assets.
+      </h4>
+    
+      <div class="btn btn-primary submitButton" ng-click="send()">
+        Send Evaluation
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!--Feedback and Return-->
+<div class="responseShell" ng-if="data.sent == true">
+  <div class="responseContent">
+    <h1 class="responseText">
+      Self-Evaluation has been sent to {{c.emp_user.displayValue}}
+    </h1>
+    
+    <hr style="margin:0px;">
+
+    <div class="btn btn-primary responseButton" ng-click="windowReturn()">
+      Return To Form
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

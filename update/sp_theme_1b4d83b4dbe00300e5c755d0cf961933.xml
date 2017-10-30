@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables/>
+        <footer display_value="EMP Footer">3518c7c1db200300e5c755d0cf961906</footer>
+        <footer_fixed>true</footer_fixed>
+        <header display_value="EMP Header">496dc3b4dbe00300e5c755d0cf96193e</header>
+        <name>EMP Theme</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-10 21:37:55</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1b4d83b4dbe00300e5c755d0cf961933</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>EMP Theme</sys_name>
+        <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
+        <sys_update_name>sp_theme_1b4d83b4dbe00300e5c755d0cf961933</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-11 16:08:04</sys_updated_on>
+    </sp_theme>
+</record_update>

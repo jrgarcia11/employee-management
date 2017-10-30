@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Form Tokens" max_length="40" name="x_134426_emp_tokens" type="collection">
+        <element label="EMP User" max_length="32" name="emp_user" reference="x_134426_emp_user" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var value = current.getUniqueValue();&#10;&#9;return value;&#10;&#10;})(current);" label="Token" max_length="200" name="token" type="string" virtual="true"/>
+        <element label="Used" max_length="40" name="used" type="boolean"/>
+        <index name="index">
+            <element name="emp_user"/>
+        </index>
+    </element>
+</database>

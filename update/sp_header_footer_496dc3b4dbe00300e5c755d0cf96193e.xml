@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.outerContainer {
+  padding:0px;
+  margin:0px;
+}
+
+.headerFooter {
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius:4px;
+  min-width:100%;
+  display:flex;
+  flex-flow: row wrap;
+}
+
+.titleText {
+  font-size:34px;
+  margin-top:10px;
+  margin-bottom:5px;
+}
+
+.webLogo {
+  flex: 1 80%;
+  padding-left: 20px;
+  color:white;
+  //max-height:50px;
+}
+
+.seperator {
+	flex: 1 100%;
+  min-height:6px;
+} 
+
+.mobileLogo {
+	display:none;
+  color:white;
+}
+
+@media only screen and (max-width:767px) {
+  .webLogo {
+  	flex:1 80%;
+    padding-left:5px;
+  	margin-top:5px;
+    margin-bottom:0px;
+    padding-right:5px;
+    text-align:center;
+    display:none;
+  }
+  
+  .titleText {
+    line-height: 40px;
+  }
+  
+  .mobileLogo {
+  	display:block;
+    flex:1 80%;
+    padding-left:15px;
+    margin-bottom:0px;
+    padding-right:5px;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>emp_header</id>
+        <internal>false</internal>
+        <link/>
+        <name>EMP Header</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-10 21:41:21</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>496dc3b4dbe00300e5c755d0cf96193e</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>EMP Header</sys_name>
+        <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
+        <sys_update_name>sp_header_footer_496dc3b4dbe00300e5c755d0cf96193e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-11 18:06:31</sys_updated_on>
+        <template><![CDATA[<div class="outerContainer">
+  <nav class="headerFooter">
+  	<div class="webLogo">
+      <h1 class="titleText">{{::portal.title}}</h1>
+    </div>
+    
+    <div class="mobileLogo">
+      <h1 class="titleText">EM Portal</h1>
+    </div>
+    
+    <div class="seperator">
+      <hr style="margin:0px;">
+      <hr style="margin:0px; margin-top:2px;">
+    </div>
+    
+  </nav>
+</div>]]></template>
+    </sp_header_footer>
+</record_update>

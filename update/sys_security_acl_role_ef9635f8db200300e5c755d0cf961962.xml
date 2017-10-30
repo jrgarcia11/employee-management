@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-10 15:18:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ef9635f8db200300e5c755d0cf961962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_134426_emp_tokens.x_134426_emp.admin</sys_name>
+        <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
+        <sys_security_acl display_value="x_134426_emp_tokens">279635f8db200300e5c755d0cf961960</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ef9635f8db200300e5c755d0cf961962</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-10 15:18:56</sys_updated_on>
+        <sys_user_role display_value="x_134426_emp.admin" name="x_134426_emp.admin">d839f324db144300e5c755d0cf9619c1</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

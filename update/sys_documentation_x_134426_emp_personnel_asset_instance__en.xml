@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="" label="Personnel Asset Instance" language="en" table="x_134426_emp_personnel_asset_instance">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Personnel Asset Instance</label>
+            <language>en</language>
+            <name>x_134426_emp_personnel_asset_instance</name>
+            <plural>Personnel Asset Instances</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-07-28 21:31:05</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>dc2f88fcdb144300e5c755d0cf96190f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Personnel Asset Instance</sys_name>
+            <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
+            <sys_update_name>sys_documentation_x_134426_emp_personnel_asset_instance__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-07-28 21:31:05</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_portal_page" unload_date="2017-10-30 19:45:51">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles>x_134426_emp.admin</read_roles>
+        <roles>x_134426_emp.admin</roles>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-09 20:00:58</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>483da5e8dbe80300e5c755d0cf961908</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Potential Employee Reports</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
+        <sys_update_name>sys_portal_page_483da5e8dbe80300e5c755d0cf961908</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-09 20:00:58</sys_updated_on>
+        <title>Potential Employee Reports</title>
+        <user/>
+        <view>emp_reporting_potential_employee</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone999</dropzone>
+                <offset>0</offset>
+                <page display_value="Potential Employee Reports">483da5e8dbe80300e5c755d0cf961908</page>
+                <summary/>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                <sys_id>7b30316cdbe80300e5c755d0cf9619bb</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">7b30316cdbe80300e5c755d0cf9619bb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>7730316cdbe80300e5c755d0cf9619bd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>list</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">7b30316cdbe80300e5c755d0cf9619bb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>7b30316cdbe80300e5c755d0cf9619bc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">7b30316cdbe80300e5c755d0cf9619bb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>f330316cdbe80300e5c755d0cf9619bc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">7b30316cdbe80300e5c755d0cf9619bb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>f730b16cdbe80300e5c755d0cf96191a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>483da5e8dbe80300e5c755d0cf961908</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">7b30316cdbe80300e5c755d0cf9619bb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>fb30316cdbe80300e5c755d0cf9619bb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>d500392cdbe80300e5c755d0cf961999</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">7b30316cdbe80300e5c755d0cf9619bb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>fb30316cdbe80300e5c755d0cf9619bd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>Potential Employee Certifications</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">7b30316cdbe80300e5c755d0cf9619bb</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>ff30316cdbe80300e5c755d0cf9619bc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone0</dropzone>
+                <offset>0</offset>
+                <page display_value="Potential Employee Reports">483da5e8dbe80300e5c755d0cf961908</page>
+                <summary/>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                <sys_id>b730316cdbe80300e5c755d0cf9619b8</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">b730316cdbe80300e5c755d0cf9619b8</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>3330316cdbe80300e5c755d0cf9619b9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">b730316cdbe80300e5c755d0cf9619b8</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>3330316cdbe80300e5c755d0cf9619bb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>483da5e8dbe80300e5c755d0cf961908</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">b730316cdbe80300e5c755d0cf9619b8</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>3b30316cdbe80300e5c755d0cf9619b8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>007e6de8dbe80300e5c755d0cf961984</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">b730316cdbe80300e5c755d0cf9619b8</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>3b30316cdbe80300e5c755d0cf9619ba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>Potential Skill Set Distribution</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">b730316cdbe80300e5c755d0cf9619b8</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>3f30316cdbe80300e5c755d0cf9619b9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">b730316cdbe80300e5c755d0cf9619b8</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>b330316cdbe80300e5c755d0cf9619ba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2017-08-09 13:12:36">b730316cdbe80300e5c755d0cf9619b8</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2017-08-09 20:12:36</sys_created_on>
+                        <sys_id>b730316cdbe80300e5c755d0cf9619b9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2017-08-09 20:12:36</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>
