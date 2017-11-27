@@ -6,71 +6,72 @@
   var c = this;
 }]]></client_script>
         <controller_as>c</controller_as>
-        <css>.outerContainer {
-  padding:0px;
-  margin:0px;
-}
-
-.headerFooter {
-  border-bottom-left-radius:4px;
-  border-bottom-right-radius:4px;
-  min-width:100%;
-  display:flex;
-  flex-flow: row wrap;
-}
-
-.titleText {
-  font-size:34px;
-  margin-top:10px;
-  margin-bottom:5px;
-}
-
-.webLogo {
-  flex: 1 80%;
-  padding-left: 20px;
-  color:white;
-  //max-height:50px;
-}
-
-.seperator {
-	flex: 1 100%;
-  min-height:6px;
-} 
-
-.mobileLogo {
-	display:none;
-  color:white;
-}
-
-@media only screen and (max-width:767px) {
-  .webLogo {
-  	flex:1 80%;
-    padding-left:5px;
-  	margin-top:5px;
-    margin-bottom:0px;
-    padding-right:5px;
-    text-align:center;
-    display:none;
-  }
-  
-  .titleText {
-    line-height: 40px;
-  }
-  
-  .mobileLogo {
-  	display:block;
-    flex:1 80%;
-    padding-left:15px;
-    margin-bottom:0px;
-    padding-right:5px;
-  }
+        <css>.outerContainer {&#13;
+  padding:0px;&#13;
+  margin:0px;&#13;
+}&#13;
+&#13;
+.headerFooter {&#13;
+  border-bottom-left-radius:4px;&#13;
+  border-bottom-right-radius:4px;&#13;
+  min-width:100%;&#13;
+  display:flex;&#13;
+  flex-flow: row wrap;&#13;
+  background-color: white;&#13;
+}&#13;
+&#13;
+.titleText {&#13;
+  color: black;&#13;
+  margin-top:10px;&#13;
+  margin-bottom:5px;&#13;
+}&#13;
+&#13;
+.webLogo {&#13;
+  flex: 1 80%;&#13;
+  padding-left: 20px;&#13;
+  color:white;&#13;
+  //max-height:50px;&#13;
+}&#13;
+&#13;
+.seperator {&#13;
+	flex: 1 100%;&#13;
+  min-height:6px;&#13;
+} &#13;
+&#13;
+.mobileLogo {&#13;
+	display:none;&#13;
+  color:white;&#13;
+}&#13;
+&#13;
+@media only screen and (max-width:767px) {&#13;
+  .webLogo {&#13;
+  	flex:1 80%;&#13;
+    padding-left:5px;&#13;
+  	margin-top:5px;&#13;
+    margin-bottom:0px;&#13;
+    padding-right:5px;&#13;
+    text-align:center;&#13;
+    display:none;&#13;
+  }&#13;
+  &#13;
+  .titleText {&#13;
+    line-height: 40px;&#13;
+  }&#13;
+  &#13;
+  .mobileLogo {&#13;
+  	display:block;&#13;
+    flex:1 80%;&#13;
+    padding-left:15px;&#13;
+    margin-bottom:0px;&#13;
+    padding-right:5px;&#13;
+  }&#13;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
         <docs/>
         <field_list/>
-        <has_preview>false</has_preview>
+        <has_preview>true</has_preview>
         <id>emp_header</id>
         <internal>false</internal>
         <link/>
@@ -89,15 +90,15 @@
         <sys_created_on>2017-08-10 21:41:21</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>496dc3b4dbe00300e5c755d0cf96193e</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name>EMP Header</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sp_header_footer_496dc3b4dbe00300e5c755d0cf96193e</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-11 18:06:31</sys_updated_on>
+        <sys_updated_by>jade.garcia</sys_updated_by>
+        <sys_updated_on>2017-11-03 15:04:06</sys_updated_on>
         <template><![CDATA[<div class="outerContainer">
   <nav class="headerFooter">
   	<div class="webLogo">
@@ -105,12 +106,15 @@
     </div>
     
     <div class="mobileLogo">
-      <h1 class="titleText">EM Portal</h1>
+      <h3 class="titleText">{{::portal.title}}</h3>
     </div>
     
     <div class="seperator">
       <hr style="margin:0px;">
       <hr style="margin:0px; margin-top:2px;">
+    </div>
+    
+    <div class="login">
     </div>
     
   </nav>

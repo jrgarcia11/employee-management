@@ -7,24 +7,24 @@
         <bootstrap_alt>false</bootstrap_alt>
         <class_name/>
         <container_class_name/>
-        <name>EMP Personnel Assets - Container 1</name>
+        <name>EMP My Assets Page - Container 1</name>
         <order>1</order>
-        <sp_page display_value="emp_personnel_assets">a6be6769dbd00300e5c755d0cf9619b3</sp_page>
+        <sp_page display_value="emp_my_assets_page">2d3e94504f9ac300f78e74828110c72f</sp_page>
         <subheader>false</subheader>
         <sys_class_name>sp_container</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-07-31 21:43:27</sys_created_on>
+        <sys_created_by>jade.garcia</sys_created_by>
+        <sys_created_on>2017-11-06 18:52:44</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
-        <sys_id>6ebee769dbd00300e5c755d0cf9619fd</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>EMP Personnel Assets - Container 1</sys_name>
+        <sys_id>ad733b814fd24700ec6c3cb28110c7c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EMP My Assets Page - Container 1</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
-        <sys_update_name>sp_container_6ebee769dbd00300e5c755d0cf9619fd</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-11 16:01:38</sys_updated_on>
+        <sys_update_name>sp_container_ad733b814fd24700ec6c3cb28110c7c5</sys_update_name>
+        <sys_updated_by>jade.garcia</sys_updated_by>
+        <sys_updated_on>2017-11-06 18:52:44</sys_updated_on>
         <width>container</width>
     </sp_container>
 </record_update>

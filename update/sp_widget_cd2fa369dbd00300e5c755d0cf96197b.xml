@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
-        <client_script><![CDATA[function($scope) {
-  /* widget controller */
+        <client_script><![CDATA[function($scope, $rootScope, spUtil) {
+  /*--widget controller--*/
   var c = this;
-	$scope.data.submitted = false;
 	
-	//ng-change function to keep level_chosen in line with state.
-	$scope.updateLevelChosen = function(item) {
-		item.level_chosen = item.state.value;
-	}
-	//Submit function, grabs input data and sends to server.
+	/*--regex to validate years--*/
+	var reg = new RegExp('[0-9]+$');
+	
+	/*--grabbing token from url--*/
+	var userLocation = window.location.href;
+	var params = userLocation.split("=");
+	$scope.data.tokenID = params[2];
+	console.log("token: "+$scope.data.tokenID);
+	
+	/*--submitting assetChoice, years, and token if present--*/
 	$scope.submitResponses = function() {
-		$scope.data.skills = $scope.data.entries.skills;
-		$scope.data.certs = $scope.data.entries.certifications;
-		$scope.data.submitted = true;
-		
-		c.server.update();
+		if($scope.data.assetChoice && reg.test($scope.data.years)){
+			console.log($scope.data.assetChoice);
+			console.log("sending years: "+$scope.data.years);
+			console.log("sending token: "+$scope.data.tokenID);
+			$rootScope.$broadcast('refreshTable', 2000);
+			c.server.update().then(function(){
+				if($scope.data.duplicateError)
+					spUtil.addErrorMessage("Duplicate detected. No insertion made.");	
+				else if($scope.data.expiredTokenError)
+					spUtil.addErrorMessage("Your token has expired. Contact an admin to re-enable it.");
+			});
+		}else{
+			spUtil.addErrorMessage("Input error. Select an asset and input numeric value for years.");
+		}
 	}
+	
 }]]></client_script>
         <controller_as>c</controller_as>
         <css>.assetBody {
@@ -106,146 +120,70 @@
         <roles/>
         <script><![CDATA[(function() {
 	
-	//Get sys_id of emp_user record from uri.
-	var userID = $sp.getParameter('emp_user_id');
-	//Get sys_id of emp_token record from uri.
-	data.tokenID = $sp.getParameter('emp_token_id');
+	data.duplicateError = false;
 	
-	//Stores translated record entries.
-	data.entries = {};
-	
-	//Function to get and populate gliderecord from an input array.
-	function getAssetRecords(array) {
-		//Create and populate query string from input array ids.
-		var queryString = array[0].id;
-		for(var i=0; i < array.length; i++) {
-			queryString += ',' + array[i].id;
-		}
-		//Create and populate gliderecordbased on query string.
-		var record = new GlideRecord('x_134426_emp_personnel_asset_instance');
-		record.addQuery('sys_id', 'IN', queryString);
-		record.query();
-		//Return populated record.
-		return record;
+	/*--Populate asset dropdown--*/
+	var assetNames = [];
+	var gr = new GlideRecord("x_134426_emp_personnel_asset");
+	gr.query();
+	while(gr.next()){
+			assetNames.push({
+				"name": gr.getDisplayValue(),
+				"sysid": gr.getValue("sys_id")
+			});
 	}
+	data.assets = assetNames;
 	
-	//Check for input from client.
-	if(input) {
-		data.tokenID = input.tokenID;
-		data.hasData = true;   //Data presence flag.
-		data.entries.skills = input.skills;   //Skill type assets array.
-		data.entries.certifications = input.certs;   //Cert type assets array.
-		//Get gliderecord of skill type assets.
-		var skillRecord = getAssetRecords(input.skills);
-		//Update records to match client input.
-		var c = 0;
-		while(skillRecord.next()) {
-			skillRecord.setValue('experience_level', input.skills[c].state.value);
-			skillRecord.setValue('years_of_experience', input.skills[c].years_of_experience);
-			skillRecord.update();
-			c++;
-		}
-		//Get gliderecord of cert type assets.
-		var certRecord = getAssetRecords(input.certs);
-		//Update records to match client input.
-		c = 0;
-		while(certRecord.next()) {
-			certRecord.setValue('have_certification',
-													input.certs[c].have_certification == '1'?
-													'1' : '0');
-			certRecord.update();
-			c++;
-		}
-		
-		//Update emp_token record.
-		var tokenRecord = new GlideRecord('x_134426_emp_tokens');
-		tokenRecord.get(data.tokenID);
-		if(tokenRecord.getRowCount() > 0) {
-			tokenRecord.setValue('used', input.submitted);
-			tokenRecord.update();
-		}
-		gs.addInfoMessage('Your Responses Have Been Submitted');
-	}
 	
-	//No input detected, page is being loaded without client input.
-	else {
+	/*--Add new Personnel Asset Instance--*/
+	if(input){
+		var empUser = new GlideRecord("x_134426_emp_user");
 		
-		data.entries.skills = [];   //Skill type asset array.
-		data.entries.certifications = [];   //Cert type asset array.
-		
-		//Create and populate asset instance gliderecord.
-		var paInstanceRecord = 
-				new GlideRecord('x_134426_emp_personnel_asset_instance');
-		paInstanceRecord.addQuery('emp_user', userID);
-		paInstanceRecord.query();
-		
-		//If record has values.
-		if(paInstanceRecord.hasNext()) {
-			//Set data presence flag.
-			data.hasData = true;
+		/*--If a token is detected in URL, use token for authentication--*/
+		if(input.tokenID){
+			var tokenRecord = new GlideRecord("x_134426_emp_tokens");
+			tokenRecord.addQuery('token', input.tokenID);
+			tokenRecord.query();
+			tokenRecord.next();
 			
-			//Iterate through records and map relevant values to objects.
-			while(paInstanceRecord.next()) {
-				var item = {};
-				
-				item.id = paInstanceRecord.getUniqueValue();
-				var certBool = 
-						paInstanceRecord.getValue('have_certification');
-				item.have_certification = Number(certBool);
-				item.experience_score =
-					paInstanceRecord.getValue('experience_score');
-				var years = 
-					paInstanceRecord.getValue('years_of_experience');
-				item.years_of_experience = Number(years);
-				item.asset_type = 
-					paInstanceRecord.personnel_asset.getRefRecord().getValue('type');
-				item.personnel_asset = 
-					paInstanceRecord.personnel_asset.getDisplayValue();
-				item.personnel_asset_id = 
-					paInstanceRecord.personnel_asset.getRefRecord().getUniqueValue();
-				
-				//Get gliderecord containing possible choices for 'experience_level'.
-				var choiceRecord = new GlideRecord('sys_choice');
-				choiceRecord.addQuery('name', paInstanceRecord.getTableName());
-				choiceRecord.addQuery('element', 'experience_level')
-				choiceRecord.query();
-				
-				//Create and populate corresponding array of choice objects.
-				item.experience_level = [];
-				while(choiceRecord.next()) {
-					var exp = {};
-					exp.value = choiceRecord.getValue('value');
-					exp.label = choiceRecord.getValue('label');
-
-					if(exp.value == paInstanceRecord.getValue('experience_level')) {
-						item.level_chosen = exp.value;
-						item.display_level = exp.label;
-					}
-
-					item.experience_level.push(exp);
-				}
-				//Set state property, to be used in ng-model for experience level.
-				item.state = item.experience_level[item.level_chosen];
-				
-				//Sort asset objects into appropriate arrays.
-				if(item.asset_type == 'skill') {
-					data.entries.skills.push(item);
-				}
-				if(item.asset_type == 'certification') {
-					data.entries.certifications.push(item);
-				}
+			/*--If the token is expired send back an error--*/
+			if(tokenRecord.used){
+				data.expiredTokenError = true;
+				return;
 			}
-			//Get emp_user display name.
-			data.emp_user = paInstanceRecord.emp_user.getDisplayValue();
-			//Get emp_user class.
-			data.emp_user_class = paInstanceRecord.emp_user.user_class.getDisplayValue();
+			empUser.addQuery("sys_id", tokenRecord.getValue("emp_user"));	
 		}
-		//If data is not present in record.
-		else {
-			//Set data presence flag.
-			data.hasData = false;
+		
+		/*--otherwise use GlideSystem for authentication--*/
+		else{
+			empUser.addQuery("system_user", gs.getUserID());
+		}
+		empUser.query();
+		empUser.next();
+		
+		
+		/*--check for asset duplicates before insertion--*/
+		var newAssetInstance = new GlideRecord("x_134426_emp_personnel_asset_instance");
+		newAssetInstance.addQuery("personnel_asset",input.assetChoice.sysid)
+		newAssetInstance.addQuery("emp_user", empUser.getValue("sys_id"));
+		newAssetInstance.query();
+		
+		/*--if the user tries to insert a duplicate entry--*/
+		if(newAssetInstance.next()){	
+			data.duplicateError = true;
+		}
+		
+		/*--no duplicate found, normal insertion--*/
+		else{
+			newAssetInstance.initialize();
+			newAssetInstance.getElement("emp_user").setValue(empUser.getValue("sys_id"));
+			newAssetInstance.personnel_asset = input.assetChoice.sysid;
+			newAssetInstance.years_of_experience = input.years;
+			newAssetInstance.insert();
+			
 		}
 	}
+	
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -253,115 +191,37 @@
         <sys_created_on>2017-07-31 21:45:16</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>cd2fa369dbd00300e5c755d0cf96197b</sys_id>
-        <sys_mod_count>340</sys_mod_count>
+        <sys_mod_count>545</sys_mod_count>
         <sys_name>EMP Personnel Assets Form</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sp_widget_cd2fa369dbd00300e5c755d0cf96197b</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-14 15:07:33</sys_updated_on>
+        <sys_updated_by>jade.garcia</sys_updated_by>
+        <sys_updated_on>2017-11-22 20:01:26</sys_updated_on>
         <template><![CDATA[<!--Primary Shell Div (Data IS Present)-->
-<div ng-if="data.hasData" class ="outerShell">
+<div class ="outerShell">
   
   <!--Main Title-->
   <div class="headerShell">
-    <h1 class="primaryHeader">
-      Self-Evaluation of Skills and Certifications
-    </h1>
+    <h3>Add Asset</h3>
   </div>
-  
-  <!--User Information-->
-  <div class="userBody">
-    <h3 style="margin-top:0px">
-      {{data.emp_user}}, {{data.emp_user_class}}
-    </h3>
-  </div>
-  
-  <hr style="margin-bottom:6px">
-  
-  <!--Skill Type Assets-->
-  <div class="skillShell">
-    <h2 class="secondaryHeader">Skills</h2>
-    <!--Skill Item Main Body-->
-    <div class="assetBody" ng-repeat="r in data.entries.skills">
-      <!--Skill Name-->
-      <div class="assetTitle">
-        <h3>{{r.personnel_asset}}</h3>
-      </div>
-      
-      <hr style="flex: 1 100%; margin:0px">
-      <!--Experience Level Question-->
-      <p class="assetQuestion">
-        How experienced are you in this skill?
-      </p>
-      <!--Experience Level Answer-->
-      <select class="assetAnswer"
-              ng-init="r.state = r.experience_level[r.level_chosen]"
-              ng-model="r.state"
-              ng-options= "s.label for s in r.experience_level"
-              ng-change="updateLevelChosen(r)">
-        
-      </select>
-      <!--Experience Years Question-->
-      <p class="assetQuestion">
-        How many years of experience do you have in this skill?
-      </p>
-      <!--Experience Years Answer-->
-      <input class="assetAnswer" 
-             type="number"
-             ng-class="{'warn': r.years_of_experience == undefined}"
-             ng-model="r.years_of_experience"
-             min="0">
-      
-    </div>
-  </div>
-  
-  <!--Certification Type Assets-->
-  <div class="certShell">
-    <h2 class="primaryHeader">Certifications</h2>
-    
-    <div class="certTitle">
-      <h3>Check All That Apply</h3>
-    </div>
-    
-    <hr style="margin: 0px">
-    
-    <!--Certification Item Main Body-->
-    <div class="certBody" ng-repeat="r in data.entries.certifications">
-      <!--Labelled Checkbox Representing Certification-->
-      <label class="checkbox">
-        <input id="cert"
-             type="checkbox" 
-             ng-model="r.have_certification"
-             ng-checked="r.have_certification == 1"
-             ng-true-value="1"
-             ng-false-value="0">
-        {{r.personnel_asset}}</label>
-      
-    </div>
-  </div>
-  
-  <!--Submission Button-->
-  <div class="btn btn-primary m-b submitButton" role="button" ng-click="submitResponses()">Submit</div>
-  
-</div>
+  <hr style="margin-bottom:2px">
 
-<!--Secondary Shell Div (Data IS NOT Present)-->
-<div class="responseShell" ng-if="!data.hasData">
-  <div class="responseContent">
-    <h1 class="responseText">
-      EMP User Not Specified
-    </h1>
-    
-    <hr style="margin:0px;">
-    
-    <h4>
-      Cannot display asset form without a valid emp_user sys_id specified in URI.
-    </h4>
-    
-  </div>
+  <!--Submitting a new personnel asset instance -->
+  <form name="assetForm" ng-submit="submitResponses()" ng-controller="c">
+    <label>Asset:
+    	<select ng-options="asset as asset.name for asset in data.assets track by asset.sysid"
+              ng-model="data.assetChoice">
+    	</select>
+    </label>
+    <label>Years of Experience:
+      <input type="text" ng-model="data.years"/>
+    </label>
+      <input type="submit" value="Add"/>
+  </form>
+  
 </div>]]></template>
     </sp_widget>
 </record_update>

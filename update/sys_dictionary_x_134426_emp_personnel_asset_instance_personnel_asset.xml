@@ -37,7 +37,7 @@
         <name>x_134426_emp_personnel_asset_instance</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
         <reference display_value="" name="x_134426_emp_personnel_asset">x_134426_emp_personnel_asset</reference>
         <reference_cascade_rule/>
@@ -54,15 +54,15 @@
         <sys_created_on>2017-07-28 21:31:03</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>c2adc4bcdb144300e5c755d0cf96198f</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Personnel Asset</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sys_dictionary_x_134426_emp_personnel_asset_instance_personnel_asset</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-08 16:07:23</sys_updated_on>
+        <sys_updated_by>jade.garcia</sys_updated_by>
+        <sys_updated_on>2017-11-08 14:42:06</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -30,7 +30,7 @@
 <p>You are not necessarily expected to be experienced in all of the skills listed, as they cover a broad range of disciplines.&nbsp;</p>
 <p>Please answer honestly and to the best of your ability.</p>
 <p><strong>You may submit your responses once. Do not submit your responses until you are done.</strong></p>
-<p><a href="https://dev33167.service-now.com/emp/?id=emp_personnel_assets&amp;emp_user_id=${sys_id}&amp;emp_token_id=${mail_script:getTokenID}" target="_blank">Skillset Self-Evaluation Survey</a></p>
+<p><a href="https://itgfirmdemo1.service-now.com/emp/?id=emp_my_assets_page&amp;emp_token_id=${mail_script:getTokenID}" target="_blank">Skillset Self-Evaluation Survey</a></p>
 <p>&nbsp;</p>]]></message_html>
         <message_list/>
         <message_text/>
@@ -54,7 +54,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c9ca7c60dba80300e5c755d0cf961994</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Send Evaluation Email</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
@@ -62,8 +62,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sysevent_email_action_c9ca7c60dba80300e5c755d0cf961994</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-14 20:45:03</sys_updated_on>
+        <sys_updated_by>jade.garcia</sys_updated_by>
+        <sys_updated_on>2017-11-13 16:28:09</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

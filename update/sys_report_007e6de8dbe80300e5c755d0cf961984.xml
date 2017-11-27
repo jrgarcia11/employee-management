@@ -35,7 +35,6 @@
         <field>personnel_asset</field>
         <field_list/>
         <filter table="x_134426_emp_personnel_asset_instance">emp_user.user_class=potential_employee^personnel_asset.type=skill^EQ^GROUPBYpersonnel_asset^TRENDBYemp_user,year<item endquery="false" field="emp_user.user_class" goto="false" newquery="false" operator="=" or="false" value="potential_employee"/>
-            <item endquery="false" field="personnel_asset.type" goto="false" newquery="false" operator="=" or="false" value="skill"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
             <item endquery="false" field="" goto="false" newquery="false" operator="GROUPBY" or="false" value="personnel_asset"/>
             <item endquery="false" field="" goto="false" newquery="false" operator="TRENDBY" or="false" value="emp_user,year"/>

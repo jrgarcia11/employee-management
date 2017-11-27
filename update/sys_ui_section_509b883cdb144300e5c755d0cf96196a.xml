@@ -2,74 +2,46 @@
 <record_update>
     <sys_ui_section caption="" section_id="509b883cdb144300e5c755d0cf96196a" sys_domain="global" table="x_134426_emp_personnel_asset" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>name</element>
+            <element>asset_name</element>
             <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-28 21:16:14</sys_created_on>
-            <sys_id>7ebb8c7cdb144300e5c755d0cf9619d6</sys_id>
+            <sys_created_by>jade.garcia</sys_created_by>
+            <sys_created_on>2017-11-08 14:38:48</sys_created_on>
+            <sys_id>0d8c01394fd28700f78e74828110c777</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_134426_emp_personnel_asset" sys_domain="global" view="Default view">509b883cdb144300e5c755d0cf96196a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 21:16:14</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-28 21:16:14</sys_created_on>
-            <sys_id>febb8c7cdb144300e5c755d0cf9619d6</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_134426_emp_personnel_asset" sys_domain="global" view="Default view">509b883cdb144300e5c755d0cf96196a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 21:16:14</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>type</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-28 21:16:14</sys_created_on>
-            <sys_id>72bb8c7cdb144300e5c755d0cf9619d7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_134426_emp_personnel_asset" sys_domain="global" view="Default view">509b883cdb144300e5c755d0cf96196a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 21:16:14</sys_updated_on>
+            <sys_updated_by>jade.garcia</sys_updated_by>
+            <sys_updated_on>2017-11-08 14:38:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>category</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-28 21:16:14</sys_created_on>
-            <sys_id>f2bb8c7cdb144300e5c755d0cf9619d7</sys_id>
+            <position>1</position>
+            <sys_created_by>jade.garcia</sys_created_by>
+            <sys_created_on>2017-11-08 14:38:48</sys_created_on>
+            <sys_id>8d8c01394fd28700f78e74828110c777</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_134426_emp_personnel_asset" sys_domain="global" view="Default view">509b883cdb144300e5c755d0cf96196a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 21:16:14</sys_updated_on>
+            <sys_updated_by>jade.garcia</sys_updated_by>
+            <sys_updated_on>2017-11-08 14:38:48</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-28 21:16:14</sys_created_on>
-            <sys_id>76bb8c7cdb144300e5c755d0cf9619d7</sys_id>
+            <element>asset_type</element>
+            <position>2</position>
+            <sys_created_by>jade.garcia</sys_created_by>
+            <sys_created_on>2017-11-08 14:38:48</sys_created_on>
+            <sys_id>018c01394fd28700f78e74828110c778</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_134426_emp_personnel_asset" sys_domain="global" view="Default view">509b883cdb144300e5c755d0cf96196a</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 21:16:14</sys_updated_on>
+            <sys_updated_by>jade.garcia</sys_updated_by>
+            <sys_updated_on>2017-11-08 14:38:48</sys_updated_on>
             <sys_user/>
-            <type>.split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
