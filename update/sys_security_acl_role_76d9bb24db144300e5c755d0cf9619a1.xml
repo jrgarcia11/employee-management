@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-28 19:58:08</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>76d9bb24db144300e5c755d0cf9619a1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_134426_emp_user.x_134426_emp.admin</sys_name>

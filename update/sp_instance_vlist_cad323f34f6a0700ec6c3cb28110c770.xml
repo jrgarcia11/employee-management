@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_instance_table">
-    <sp_instance_table action="INSERT_OR_UPDATE">
+<record_update table="sp_instance_vlist">
+    <sp_instance_vlist action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>
         <color>default</color>
@@ -16,26 +16,26 @@
         <order_direction>asc</order_direction>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">de3f50904f9ac300f78e74828110c7ef</sp_column>
+        <sp_column display_value="1">de6d91e84f7a4340f78e74828110c731</sp_column>
         <sp_page/>
-        <sp_widget display_value="EMP Asset Data Table">022e83414f924700ec6c3cb28110c773</sp_widget>
-        <sys_class_name>sp_instance_table</sys_class_name>
+        <sp_widget display_value="EMP Asset Lists">f4336fb34f6a0700ec6c3cb28110c7e5</sp_widget>
+        <sys_class_name>sp_instance_vlist</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
-        <sys_created_on>2017-11-06 16:10:42</sys_created_on>
+        <sys_created_on>2017-11-27 17:03:30</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
-        <sys_id>086e87414f924700ec6c3cb28110c753</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>User Asset Table Widget</sys_name>
+        <sys_id>cad323f34f6a0700ec6c3cb28110c770</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
-        <sys_update_name>sp_instance_table_086e87414f924700ec6c3cb28110c753</sys_update_name>
+        <sys_update_name>sp_instance_vlist_cad323f34f6a0700ec6c3cb28110c770</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-11-09 15:37:23</sys_updated_on>
+        <sys_updated_on>2017-11-29 15:11:41</sys_updated_on>
         <table>x_134426_emp_personnel_asset_instance</table>
-        <title>User Asset Table Widget</title>
+        <title/>
         <url/>
         <widget_parameters/>
-    </sp_instance_table>
+    </sp_instance_vlist>
 </record_update>

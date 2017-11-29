@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2017-07-28 21:31:05</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>dc2f88fcdb144300e5c755d0cf961911</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>EMP User</sys_name>

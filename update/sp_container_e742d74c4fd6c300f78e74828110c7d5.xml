@@ -14,7 +14,7 @@
         <sys_class_name>sp_container</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-03 13:53:57</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>e742d74c4fd6c300f78e74828110c7d5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>EMP Main Page - Container 1</sys_name>

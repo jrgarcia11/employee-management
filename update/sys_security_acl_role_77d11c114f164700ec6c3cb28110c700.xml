@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-06 21:05:55</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>77d11c114f164700ec6c3cb28110c700</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_134426_emp_personnel_asset.x_134426_emp.admin</sys_name>

@@ -4,92 +4,62 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>emp_user</element>
-            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbb3b269db500300e5c755d0cf961943</list_id>
+            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">14b811684f7a4340f78e74828110c76a</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 17:25:42</sys_created_on>
-            <sys_id>47b3b269db500300e5c755d0cf961944</sys_id>
+            <sys_created_by>jade.garcia</sys_created_by>
+            <sys_created_on>2017-11-29 14:50:59</sys_created_on>
+            <sys_id>d8b811684f7a4340f78e74828110c76a</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 17:25:42</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>personnel_asset</element>
-            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbb3b269db500300e5c755d0cf961943</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>1</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 17:25:42</sys_created_on>
-            <sys_id>cbb3b269db500300e5c755d0cf961944</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 17:25:42</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>personnel_asset.type</element>
-            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbb3b269db500300e5c755d0cf961943</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>2</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 17:25:42</sys_created_on>
-            <sys_id>4fb3b269db500300e5c755d0cf961944</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 17:25:42</sys_updated_on>
+            <sys_updated_by>jade.garcia</sys_updated_by>
+            <sys_updated_on>2017-11-29 14:50:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>experience_level</element>
-            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbb3b269db500300e5c755d0cf961943</list_id>
+            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">14b811684f7a4340f78e74828110c76a</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
-            <position>3</position>
+            <position>1</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 17:25:42</sys_created_on>
-            <sys_id>cfb3b269db500300e5c755d0cf961944</sys_id>
+            <sys_created_by>jade.garcia</sys_created_by>
+            <sys_created_on>2017-11-29 14:50:59</sys_created_on>
+            <sys_id>5cb811684f7a4340f78e74828110c76a</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 17:25:42</sys_updated_on>
+            <sys_updated_by>jade.garcia</sys_updated_by>
+            <sys_updated_on>2017-11-29 14:50:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>personnel_asset</element>
+            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">14b811684f7a4340f78e74828110c76a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jade.garcia</sys_created_by>
+            <sys_created_on>2017-11-29 14:50:59</sys_created_on>
+            <sys_id>dcb811684f7a4340f78e74828110c76a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jade.garcia</sys_updated_by>
+            <sys_updated_on>2017-11-29 14:50:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>years_of_experience</element>
-            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbb3b269db500300e5c755d0cf961943</list_id>
+            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">14b811684f7a4340f78e74828110c76a</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
-            <position>4</position>
+            <position>3</position>
             <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 17:25:42</sys_created_on>
-            <sys_id>43b3b269db500300e5c755d0cf961945</sys_id>
+            <sys_created_by>jade.garcia</sys_created_by>
+            <sys_created_on>2017-11-29 14:50:59</sys_created_on>
+            <sys_id>50b811684f7a4340f78e74828110c76b</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 17:25:42</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>have_certification</element>
-            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">cbb3b269db500300e5c755d0cf961943</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>5</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-31 17:25:42</sys_created_on>
-            <sys_id>c3b3b269db500300e5c755d0cf961945</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-31 17:25:42</sys_updated_on>
+            <sys_updated_by>jade.garcia</sys_updated_by>
+            <sys_updated_on>2017-11-29 14:50:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -103,11 +73,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-11-14 15:23:37</sys_created_on>
+            <sys_created_on>2017-11-29 14:58:01</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>cc50dcb74f564b00ec6c3cb28110c7f9</sys_id>
+            <sys_id>df4ad9684f7a4340f78e74828110c7cb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_134426_emp_personnel_asset_instance</sys_name>
             <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
@@ -116,8 +86,8 @@
             <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
             <sys_update_name>sys_ui_list_x_134426_emp_personnel_asset_instance_Administration</sys_update_name>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-11-14 15:23:37</sys_updated_on>
-            <sys_user display_value="Jade Garcia">12a26bba4f864300ec6c3cb28110c7e5</sys_user>
+            <sys_updated_on>2017-11-29 14:58:01</sys_updated_on>
+            <sys_user/>
             <view display_value="Administration" name="Administration">45ff4b29db900300e5c755d0cf9619c6</view>
             <view_name/>
         </sys_ui_list>

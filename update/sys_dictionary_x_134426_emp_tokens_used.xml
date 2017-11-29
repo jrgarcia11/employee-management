@@ -52,8 +52,8 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-10 15:18:55</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>024631f8db200300e5c755d0cf961953</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a3f06bff4f2a0700ec6c3cb28110c74f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Used</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
@@ -61,8 +61,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sys_dictionary_x_134426_emp_tokens_used</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-10 15:18:55</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-27 16:51:09</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

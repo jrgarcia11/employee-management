@@ -10,7 +10,7 @@
         <sys_class_name>sp_page</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-03 19:26:17</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>2d3e94504f9ac300f78e74828110c72f</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>emp_my_assets_page</sys_name>

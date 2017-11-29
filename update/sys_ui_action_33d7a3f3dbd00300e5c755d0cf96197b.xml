@@ -30,7 +30,7 @@ action.setRedirectURL('/emp/?id=emp_personnel_assets&emp_user_id=' + current.get
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-07 21:01:30</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>33d7a3f3dbd00300e5c755d0cf96197b</sys_id>

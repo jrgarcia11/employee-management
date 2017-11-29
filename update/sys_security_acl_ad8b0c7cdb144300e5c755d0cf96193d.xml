@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-28 21:15:19</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>ad8b0c7cdb144300e5c755d0cf96193d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_134426_emp_personnel_asset</sys_name>

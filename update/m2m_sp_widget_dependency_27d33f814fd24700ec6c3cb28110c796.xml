@@ -6,7 +6,7 @@
         <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-06 18:54:31</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>27d33f814fd24700ec6c3cb28110c796</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Spectrum Color Picker.Copy of Form</sys_name>

@@ -32,7 +32,7 @@ while(gr.next()){
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-22 18:19:25</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>5f14c29a4fae4f00f78e74828110c77f</sys_id>
         <sys_mod_count>32</sys_mod_count>
         <sys_name>Expire tokens after 24 hours</sys_name>

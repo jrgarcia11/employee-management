@@ -52,17 +52,17 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-28 21:31:05</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>1c2f88fcdb144300e5c755d0cf961909</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3ff06bff4f2a0700ec6c3cb28110c795</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_134426_emp_personnel_asset_instance</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
-        <sys_update_name>sys_dictionary_x_134426_emp_personnel_asset_instance_null</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-07-28 21:31:05</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_134426_emp_personnel_asset_instance_NULL</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-11-27 16:51:08</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

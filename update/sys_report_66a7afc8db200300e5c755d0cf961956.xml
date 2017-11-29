@@ -85,7 +85,7 @@
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-08 15:37:24</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>66a7afc8db200300e5c755d0cf961956</sys_id>
         <sys_mod_count>8</sys_mod_count>
         <sys_name>Employee Certifications</sys_name>

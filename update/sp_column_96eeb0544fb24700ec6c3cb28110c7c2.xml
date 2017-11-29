@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_row">
-    <sp_row action="INSERT_OR_UPDATE">
+<record_update table="sp_column">
+    <sp_column action="INSERT_OR_UPDATE">
         <class_name/>
         <order>1</order>
-        <sp_column/>
-        <sp_container display_value="EMP My Assets Page - Container 2">43ce9c504f9ac300f78e74828110c745</sp_container>
-        <sys_class_name>sp_row</sys_class_name>
+        <size>3</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">5eeeb0544fb24700ec6c3cb28110c7be</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
-        <sys_created_on>2017-11-17 14:23:56</sys_created_on>
+        <sys_created_on>2017-11-28 18:19:51</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
-        <sys_id>076f5f684f62cb00f78e74828110c76a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_id>96eeb0544fb24700ec6c3cb28110c7c2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>1</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
-        <sys_update_name>sp_row_076f5f684f62cb00f78e74828110c76a</sys_update_name>
+        <sys_update_name>sp_column_96eeb0544fb24700ec6c3cb28110c7c2</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-11-17 14:23:56</sys_updated_on>
-    </sp_row>
+        <sys_updated_on>2017-11-29 15:11:47</sys_updated_on>
+    </sp_column>
 </record_update>
