@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Asset Category" max_length="40" name="x_134426_emp_asset_category" type="collection">
+        <element display="true" label="category name" max_length="50" name="category_name" type="string"/>
+    </element>
+</database>

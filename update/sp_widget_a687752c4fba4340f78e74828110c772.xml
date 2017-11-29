@@ -3,14 +3,17 @@
     <sp_widget action="INSERT_OR_UPDATE">
         <client_script><![CDATA[function ($scope, $location, spUtil, amb, $http, $rootScope,$timeout) {
 	var c = this;
-	
+
 	$scope.submitResponses = function(){
 		$scope.data.submit = true;
 		c.server.update().then(function(){
-			spUtil.addInfoMessage("Successfully updated years of experience.")
+			if($scope.data.expiredTokenError)
+				spUtil.addErrorMessage("Your token is expired. Contact an admin to re-enable it.");
+			else
+				spUtil.addInfoMessage("Successfully updated years of experience.");
 		});
 	};
-	
+
 	/*--Makes Widget Async--*/
 	var title = $scope.data.title;
 	if ($scope.options.use_instance_title == 'true')
@@ -145,6 +148,10 @@ IMG.img-sm {&#13;
 			tokenRecord.addQuery("token",input.tokenID);
 			tokenRecord.query();
 			tokenRecord.next();
+			if(tokenRecord.used){
+				data.expiredTokenError = true;
+				return;
+			}
 		}else{
 			currentUser = gs.getUserID();
 		}
@@ -255,7 +262,7 @@ IMG.img-sm {&#13;
         <sys_created_on>2017-11-29 17:05:45</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>a687752c4fba4340f78e74828110c772</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>EMP Asset Lists</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
@@ -263,7 +270,7 @@ IMG.img-sm {&#13;
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sp_widget_a687752c4fba4340f78e74828110c772</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-11-29 17:18:57</sys_updated_on>
+        <sys_updated_on>2017-11-29 21:10:08</sys_updated_on>
         <template><![CDATA[<div>
   <!-- ng-repeat the tables for data.categories-->
   <h4>Enter Years of Experience for Each Skill</h4>

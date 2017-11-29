@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <extension_model/>
+        <is_extendable>false</is_extendable>
+        <label>Asset Category</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_134426_emp_asset_category</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>jade.garcia</sys_created_by>
+        <sys_created_on>2017-11-29 19:42:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f67a16ac4ffa4340f78e74828110c7ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Asset Category</sys_name>
+        <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
+        <sys_update_name>sys_db_object_f67a16ac4ffa4340f78e74828110c7ac</sys_update_name>
+        <sys_updated_by>jade.garcia</sys_updated_by>
+        <sys_updated_on>2017-11-29 19:42:25</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_134426_emp.asset_category_user" name="x_134426_emp.asset_category_user">556b92ec4ffa4340f78e74828110c7bc</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+</record_update>
