@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-28 21:31:05</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>982f48fcdb144300e5c755d0cf9619fa</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_134426_emp_personnel_asset_instance.x_134426_emp.admin</sys_name>

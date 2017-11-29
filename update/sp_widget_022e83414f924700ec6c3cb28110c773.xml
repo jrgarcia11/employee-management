@@ -546,7 +546,7 @@ tbody tr:last-child {
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-06 16:09:45</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>022e83414f924700ec6c3cb28110c773</sys_id>
         <sys_mod_count>255</sys_mod_count>
         <sys_name>EMP Asset Data Table</sys_name>

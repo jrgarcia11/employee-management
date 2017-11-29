@@ -22,7 +22,7 @@
         <sys_class_name>sys_relationship</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-31 18:49:39</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>4f6307a1db900300e5c755d0cf96192a</sys_id>
         <sys_mod_count>6</sys_mod_count>
         <sys_name>Users With This Asset</sys_name>

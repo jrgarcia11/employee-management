@@ -10,7 +10,7 @@
         <sys_class_name>sp_page</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-03 15:10:37</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a2d367c44f1ac300f78e74828110c70c</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>emp_stock_header</sys_name>

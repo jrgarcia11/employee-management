@@ -13,15 +13,15 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-10 15:18:58</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>7338eb7e4f864300ec6c3cb28110c76b</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d2a435684fba4340f78e74828110c7a8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_134426_emp_tokens</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
-        <sys_update_name>ua_table_licensing_config_7338eb7e4f864300ec6c3cb28110c76b</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_d2a435684fba4340f78e74828110c7a8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2017-08-10 15:18:58</sys_updated_on>
     </ua_table_licensing_config>

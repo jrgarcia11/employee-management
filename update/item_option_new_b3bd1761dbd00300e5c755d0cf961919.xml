@@ -58,7 +58,7 @@
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-31 20:32:23</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>b3bd1761dbd00300e5c755d0cf961919</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>How experienced do you feel you are?</sys_name>

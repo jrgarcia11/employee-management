@@ -189,7 +189,7 @@
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-31 21:45:16</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>cd2fa369dbd00300e5c755d0cf96197b</sys_id>
         <sys_mod_count>545</sys_mod_count>
         <sys_name>EMP Personnel Assets Form</sys_name>

@@ -13,15 +13,15 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-28 21:31:05</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>1f38eb7e4f864300ec6c3cb28110c70d</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>72a435684fba4340f78e74828110c7ef</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_134426_emp_personnel_asset_instance</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
-        <sys_update_name>ua_table_licensing_config_1f38eb7e4f864300ec6c3cb28110c70d</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_72a435684fba4340f78e74828110c7ef</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2017-07-28 21:31:05</sys_updated_on>
     </ua_table_licensing_config>
