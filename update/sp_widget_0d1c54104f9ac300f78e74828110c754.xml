@@ -18,7 +18,7 @@
         <link/>
         <name>EMP homepage</name>
         <option_schema/>
-        <public>false</public>
+        <public>true</public>
         <roles/>
         <script><![CDATA[(function() {
   /* populate the 'data' object */
@@ -29,9 +29,9 @@
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-03 19:17:45</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>0d1c54104f9ac300f78e74828110c754</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>EMP homepage</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
@@ -39,9 +39,36 @@
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sp_widget_0d1c54104f9ac300f78e74828110c754</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-11-03 19:17:45</sys_updated_on>
+        <sys_updated_on>2017-12-01 19:23:50</sys_updated_on>
         <template><![CDATA[<div>
   <h1>Welcome!</h1>
+  <p>
+  The Employee Management Portal tracks employees' and potential hires' skill sets. Users can add their years of experience
+  for approved assets. Users can also suggest assets that should be added. Admins can send potential hires emails with links
+  containing time-sensitive tokens to allow form submission. Admins can approve suggested assets. Admins will also be able
+  to assign a score to any user's asset (coming soon).
+  </p>
+  The Employee Management Portal needs a few things to be useful.<br/><br/>
+  <ol>
+  <li><b>An Admin. User Administration > Groups > EMP Admins > Group Members > Edit > add user(s) to be admin.</b><br/>
+    Add yourself if you plan to develop and test.
+  </li>
+    <li><b>EMP Users. Employee Management > EMP Users > New.</b><br/>
+  	Type can either be Employee or Potential Hire. When creating, if the type is set to Employee, 
+    the user will be automatically be associated with the EMP Employee Group. If the type is set to Potential Hire,
+  	an associated entry in the Form Token table will be automatically created. Visit the Admin Page to send an email to
+    a potential hire with their form token.
+  </li>
+    <li><b> Asset Categories. Employee Management > Administration > Asset Categories.</b><br/>
+    These are the main categories of assets. Make a few of these before continuing. Examples would be client side, 
+    server side, certifications, computer languages, etc.
+  </li>
+    <li><b>Personnel Assets. Employee Management > Personnel Assets.</b><br/>
+  	Add a few of these. They need a name and an asset category from the ones you made in previous step.
+  	An example would be Name: Javascript, Category: Client Side. Personnel Asset Instances are automatically created
+  	for all EMP Users when a new Personnel Asset is made. An email is sent out to all EMP Users when a new asset is added.
+  </li>
+  </ol>
 </div>]]></template>
     </sp_widget>
 </record_update>

@@ -46,7 +46,7 @@
             <sys_created_by>jade.garcia</sys_created_by>
             <sys_created_on>2017-11-08 14:38:25</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>be01ebff4f2a0700ec6c3cb28110c7d3</sys_id>
+            <sys_id>c2b4f5684fba4340f78e74828110c724</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_name>asset_type</sys_name>
             <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
@@ -55,7 +55,7 @@
             <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
             <sys_update_name>sys_choice_x_134426_emp_personnel_asset_asset_type</sys_update_name>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-11-29 16:36:11</sys_updated_on>
+            <sys_updated_on>2017-12-06 15:26:35</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

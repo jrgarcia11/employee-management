@@ -10,10 +10,10 @@
             <name>x_134426_emp_personnel_asset</name>
             <plural>Categories</plural>
             <sys_class_name>sys_documentation</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-28 21:15:20</sys_created_on>
+            <sys_created_by>jade.garcia</sys_created_by>
+            <sys_created_on>2017-11-29 19:56:00</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>258b0c7cdb144300e5c755d0cf96197c</sys_id>
+            <sys_id>6c8ed2604f3e4340f78e74828110c7ef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Category</sys_name>
             <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
@@ -21,8 +21,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
             <sys_update_name>sys_documentation_x_134426_emp_personnel_asset_category_en</sys_update_name>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-28 21:15:20</sys_updated_on>
+            <sys_updated_by>jade.garcia</sys_updated_by>
+            <sys_updated_on>2017-11-29 19:56:00</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

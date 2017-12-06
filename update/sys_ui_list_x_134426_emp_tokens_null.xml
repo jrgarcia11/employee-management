@@ -4,47 +4,47 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_134426_emp_tokens" element="NULL" name="x_134426_emp_tokens" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d4d19c504f724700ec6c3cb28110c733</list_id>
+            <list_id display_value="x_134426_emp_tokens" element="NULL" name="x_134426_emp_tokens" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">140debb04f368700ec6c3cb28110c75a</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-11-28 15:02:49</sys_created_on>
-            <sys_id>90d19c504f724700ec6c3cb28110c734</sys_id>
+            <sys_created_on>2017-11-30 20:17:27</sys_created_on>
+            <sys_id>dc0debb04f368700ec6c3cb28110c75a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-11-28 15:02:49</sys_updated_on>
+            <sys_updated_on>2017-11-30 20:17:27</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>emp_user</element>
-            <list_id display_value="x_134426_emp_tokens" element="NULL" name="x_134426_emp_tokens" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d4d19c504f724700ec6c3cb28110c733</list_id>
+            <list_id display_value="x_134426_emp_tokens" element="NULL" name="x_134426_emp_tokens" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">140debb04f368700ec6c3cb28110c75a</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-11-28 15:02:49</sys_created_on>
-            <sys_id>18d19c504f724700ec6c3cb28110c734</sys_id>
+            <sys_created_on>2017-11-30 20:17:27</sys_created_on>
+            <sys_id>940d63f04f368700ec6c3cb28110c7ea</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-11-28 15:02:49</sys_updated_on>
+            <sys_updated_on>2017-11-30 20:17:27</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>used</element>
-            <list_id display_value="x_134426_emp_tokens" element="NULL" name="x_134426_emp_tokens" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d4d19c504f724700ec6c3cb28110c733</list_id>
+            <list_id display_value="x_134426_emp_tokens" element="NULL" name="x_134426_emp_tokens" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">140debb04f368700ec6c3cb28110c75a</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-11-28 15:02:49</sys_created_on>
-            <sys_id>98d19c504f724700ec6c3cb28110c734</sys_id>
+            <sys_created_on>2017-11-30 20:17:27</sys_created_on>
+            <sys_id>180d63f04f368700ec6c3cb28110c7ea</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-11-28 15:02:49</sys_updated_on>
+            <sys_updated_on>2017-11-30 20:17:27</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -58,11 +58,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-11-28 15:02:49</sys_created_on>
+            <sys_created_on>2017-11-30 20:24:33</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d4d19c504f724700ec6c3cb28110c733</sys_id>
+            <sys_id>a0aeaff04f368700ec6c3cb28110c737</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_134426_emp_tokens</sys_name>
             <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
@@ -71,8 +71,8 @@
             <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
             <sys_update_name>sys_ui_list_x_134426_emp_tokens_null</sys_update_name>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-11-28 15:02:49</sys_updated_on>
-            <sys_user/>
+            <sys_updated_on>2017-11-30 20:24:33</sys_updated_on>
+            <sys_user display_value="Jade Garcia">12a26bba4f864300ec6c3cb28110c7e5</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>

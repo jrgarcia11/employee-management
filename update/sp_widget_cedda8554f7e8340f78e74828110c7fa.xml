@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function ($scope, $location, spUtil, amb, $http, $rootScope,$timeout) {
+	var c = this;
+
+	$scope.submitResponses = function(){
+		if($scope.data.gradeUser){
+			$scope.data.submit = true;
+			c.server.update().then(function(){
+				spUtil.addInfoMessage("Successfully updated experience scores.");
+				$scope.data.submit = false;
+			});
+		}else{
+			spUtil.addErrorMessage("Please select an employee.");
+		}
+	};
+
+	$scope.$on("field.change", function(evt, parms){
+		console.log("parms.field.value: "+parms.field.value);
+		$scope.data.gradeUser = parms.field.value;
+		c.server.update();
+	});
+
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>//Taken from the activity widget&#13;
+.timeline-body &gt; p {&#13;
+  white-space: pre-wrap;&#13;
+}&#13;
+&#13;
+.no-resize {&#13;
+  resize: none;&#13;
+}&#13;
+&#13;
+.journal-field-indicator {&#13;
+	width: 5px;&#13;
+  height: 23px;&#13;
+  position: absolute;&#13;
+  left: 5px;&#13;
+  top: 5px;&#13;
+  z-index: 3;&#13;
+}&#13;
+&#13;
+.panel-heading {&#13;
+ word-wrap: break-word;&#13;
+}&#13;
+&#13;
+//Original css&#13;
+&#13;
+/*&#13;
+.panel {&#13;
+position: relative;&#13;
+}&#13;
+&#13;
+.panel-heading i {&#13;
+  cursor: pointer;&#13;
+  position: absolute;&#13;
+  padding: 10px;&#13;
+  top: 0px;&#13;
+  right: 0px;  &#13;
+  cursor: pointer;&#13;
+}&#13;
+*/&#13;
+.disabled-filter {&#13;
+	color: #A0A0A0;&#13;
+}&#13;
+&#13;
+.list-group-imte {&#13;
+  overflow: hidden;&#13;
+}&#13;
+&#13;
+.list-group-item.ng-enter {&#13;
+  transition: all 1s;&#13;
+  -webkit-transition: all 1s;&#13;
+&#13;
+  background-color: #c0dcfa;&#13;
+}&#13;
+&#13;
+.list-group-item.ng-enter-active {&#13;
+  background-color: #fff;&#13;
+}&#13;
+&#13;
+.hide-x-overflow {&#13;
+  overflow-x: hidden;&#13;
+}&#13;
+&#13;
+.translated-html &gt; p {&#13;
+  margin: 0px;&#13;
+  padding: 0px;&#13;
+}&#13;
+&#13;
+IMG {&#13;
+  max-width: 320px;&#13;
+  max-height: 240px;&#13;
+}&#13;
+&#13;
+IMG.img-sm {&#13;
+  max-height: 40px;&#13;
+  max-width: 40px;&#13;
+}&#13;
+&#13;
+.filter-box {&#13;
+  margin-top: 10px;&#13;
+}&#13;
+&#13;
+.list-item-text{&#13;
+  overflow: hidden;&#13;
+  height: 20px;&#13;
+}</css>
+        <data_table>sp_instance_vlist</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>table,display_field,glyph,filter,sp_page,color,size</field_list>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>EMP Asset Grading Lists</name>
+        <option_schema>[{"name":"always_show","label":"Show even when empty","type":"boolean"},{"displayValue":"Activity","name":"activity","default_value":"x_entg_vrm_poc_activity","label":"Activity","type":"string","value":"x_entg_vrm_poc_activity"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	if (!input) // asynch load list
+		return;
+
+	var gr = new GlideRecord("x_134426_emp_personnel_asset_instance");
+	gr._query();
+
+	function getData(currentUser){
+		data.list = [];
+		data.categories = [];
+		var tokenRecord;
+		while (gr.next()) {
+			var record = {};
+			$sp.getRecordElements(record, gr, data.fields);
+
+			/*--If token exists, use tokenRecord to verify EMP User otherwise use GlideSystem to verify EMP User--*/
+			if(currentUser == gr.emp_user.sys_id){
+				record.sys_id = gr.getValue('sys_id');
+				var category = gr.personnel_asset.category.getDisplayValue();
+				var asset = gr.getDisplayValue("personnel_asset");
+				if(gr.years_of_experience > 0)
+					addAssetToCategory(category, asset);	
+			}
+		}
+	}
+
+	if(input.gradeUser){
+		getData(input.gradeUser);
+	}
+	if(input.submit){
+		var empUser = new GlideRecord("x_134426_emp_user");
+		empUser.addQuery("sys_id", input.gradeUser);
+		empUser.query();
+		empUser.next();
+		/*--update personnel asset instances with years inputted--*/
+		var grAsset = new GlideRecord("x_134426_emp_personnel_asset_instance");
+		grAsset.addQuery("emp_user", empUser.getValue("sys_id"));
+		grAsset.addQuery("years_of_experience", ">", 0);
+		grAsset.query();
+		while(grAsset.next()){
+			var catName = grAsset.personnel_asset.category.getDisplayValue();
+			var assetName = grAsset.getDisplayValue("personnel_asset");
+			var catIndex = categoryListContains(catName);
+			var assetIndex = assetListContains(catIndex, assetName);
+			gs.info("catName="+catName+"\nassetName="+assetName+
+							"\ncatIndex="+catIndex+"\nassetIndex="+assetIndex);
+			var score = input.categories[catIndex].catAssets[assetIndex].assetScore;
+			grAsset.experience_score = score;
+			data.categories[catIndex].catAssets[assetIndex].assetScore = score;
+			grAsset.update();
+		}
+	}
+
+	/* data.categories = [
+	 *		{
+	 *			catName: "Client Side",
+	 *			catAssets: [{assetName:"JavaScript",assetYear: 0, assetScore: 0},
+	 *									{assetName:"AngularJS",assetYear:0, assetScore: 0}
+	 *								 ]
+	 *    },
+	 *		{
+	 *			catName: "Server Side",
+	 *			catAssets: [{assetName:"Java",assetYear: 0, assetScore: 0},
+	 *									{assetName:"ServiceNow",assetYear:0, assetScore: 0}
+	 *								 ]
+	 *		}
+	 * ]
+	 */
+	function Category(catName, catAssets){
+		this.catName = catName;
+		this.catAssets = catAssets;
+	}
+	function Asset(assetName, assetYear, assetScore){
+		this.assetName = assetName;
+		this.assetYear = parseFloat(assetYear);
+		this.assetScore = parseFloat(assetScore);
+	}
+
+	/*--Returns index of category in data.categories, otherwise returns -1 --*/
+	function categoryListContains(catName){
+		for(var i = 0; i < data.categories.length; i++){
+			if(catName == data.categories[i].catName)
+				return i;
+		}
+		return -1;
+	}
+
+	/*--Returns index of asset in catAssets array for a given category--*/
+	function assetListContains(catIndex, assetName){
+		for(var i = 0; i < data.categories[catIndex].catAssets.length; i++){
+			if(assetName == data.categories[catIndex].catAssets[i].assetName)
+				return i;
+		}
+		return -1;
+	}
+
+	/*--Sorts assets into their appropriate category--*/
+	function addAssetToCategory(catName, catAsset){
+		var year = gr.getDisplayValue("years_of_experience");
+		var score = gr.getDisplayValue("experience_score");
+		var catIndex = categoryListContains(catName);
+		if(catIndex >= 0){
+			data.categories[catIndex].catAssets.push(new Asset(catAsset, year, score));
+		}else{
+			data.categories.push(new Category(catName, [new Asset(catAsset, year, score)]));
+		}
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>jade.garcia</sys_created_by>
+        <sys_created_on>2017-12-01 19:39:13</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>cedda8554f7e8340f78e74828110c7fa</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name>EMP Asset Grading Lists</sys_name>
+        <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
+        <sys_update_name>sp_widget_cedda8554f7e8340f78e74828110c7fa</sys_update_name>
+        <sys_updated_by>jade.garcia</sys_updated_by>
+        <sys_updated_on>2017-12-05 20:23:45</sys_updated_on>
+        <template><![CDATA[<div>
+  <div class="panel panel-default b">
+
+    <div class="panel-heading form-inline">
+      <span class="panel-title">Grading Sheet</span>
+    </div>
+
+    <sn-record-picker class="referenceField" field="c.emp_user" table="'x_134426_emp_user'" 
+                      display-field="'full_name'" value-field="'sys_id'" 
+                      search-fields="'name'" page-size="100" 
+                      placeholder="Choose Employee">
+    </sn-record-picker>
+    <!-- ng-repeat the tables for data.categories-->
+    <form ng-submit="submitResponses()" ng-controller="c">
+      <div class="panel panel-{{options.color}} b" ng-repeat="category in data.categories track by $index">
+        <div class="panel-heading form-inline" ng-hide="options.hide_header">
+          <span class="panel-title"><i ng-if="options.glyph" class="fa fa-{{options.glyph}} m-r"></i>{{category.catName}}</span>
+          <div class="clearfix"></div>
+        </div>
+
+        <!-- body -->
+        <table class="table table-striped table-responsive" ng-if="data.categories.length">
+          <tbody>
+            <b><tr><td>Asset</td><td>Years of Experience</td><td>Grade (0-100)</td></tr></b>
+            <tr ng-repeat="item in category.catAssets track by $index">
+              <td>{{item.assetName}}</td>
+              <td>{{item.assetYear}}</td>
+              <td style="float:right;">
+                <input type="number" ng-model="item.assetScore" min="0" max="100"/>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- footer -->
+        <div class="panel-footer" ng-hide="options.hide_footer">
+          <div class="m-t-xs panel-title"></div>
+          <span class="clearfix"></span>
+        </div>
+
+      </div>
+      <input type="submit" value="Submit"/>
+    </form>
+
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -11,13 +11,13 @@
             <name>x_134426_emp_personnel_asset</name>
             <sequence/>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-11-27 18:27:23</sys_created_on>
+            <sys_created_on>2017-11-29 17:00:37</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>9c077bfb4f6a0700ec6c3cb28110c78e</sys_id>
+            <sys_id>fd56f9e84fba4340f78e74828110c7ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-11-27 18:27:23</sys_updated_on>
+            <sys_updated_on>2017-11-29 17:00:37</sys_updated_on>
             <value>certification</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -30,13 +30,13 @@
             <name>x_134426_emp_personnel_asset</name>
             <sequence/>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-11-27 18:22:48</sys_created_on>
+            <sys_created_on>2017-11-29 17:00:23</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>3cf53bfb4f6a0700ec6c3cb28110c744</sys_id>
+            <sys_id>4e46f9e84fba4340f78e74828110c7a5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-11-27 18:22:48</sys_updated_on>
+            <sys_updated_on>2017-11-29 17:00:23</sys_updated_on>
             <value>client_side</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -49,24 +49,24 @@
             <name>x_134426_emp_personnel_asset</name>
             <sequence/>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-11-27 18:23:12</sys_created_on>
+            <sys_created_on>2017-11-29 17:00:08</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d4063bfb4f6a0700ec6c3cb28110c748</sys_id>
+            <sys_id>3426b9e84fba4340f78e74828110c79b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-11-27 18:23:12</sys_updated_on>
+            <sys_updated_on>2017-11-29 17:00:08</sys_updated_on>
             <value>server_side</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>category</element>
             <name>x_134426_emp_personnel_asset</name>
             <sys_class_name>sys_choice_set</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-28 21:19:56</sys_created_on>
+            <sys_created_by>jade.garcia</sys_created_by>
+            <sys_created_on>2017-11-29 17:00:08</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>ba01ebff4f2a0700ec6c3cb28110c7da</sys_id>
-            <sys_mod_count>14</sys_mod_count>
+            <sys_id>184679e84fba4340f78e74828110c797</sys_id>
+            <sys_mod_count>4</sys_mod_count>
             <sys_name>category</sys_name>
             <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
             <sys_policy/>
@@ -74,7 +74,7 @@
             <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
             <sys_update_name>sys_choice_x_134426_emp_personnel_asset_category</sys_update_name>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-11-29 16:36:10</sys_updated_on>
+            <sys_updated_on>2017-12-06 15:26:29</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>
