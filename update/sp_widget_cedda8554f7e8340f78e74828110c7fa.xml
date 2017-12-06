@@ -233,7 +233,7 @@ IMG.img-sm {&#13;
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-12-01 19:39:13</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>cedda8554f7e8340f78e74828110c7fa</sys_id>
         <sys_mod_count>45</sys_mod_count>
         <sys_name>EMP Asset Grading Lists</sys_name>

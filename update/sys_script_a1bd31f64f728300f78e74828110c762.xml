@@ -3,8 +3,8 @@
     <sys_script action="INSERT_OR_UPDATE">
         <abort_action>false</abort_action>
         <access>package_private</access>
-        <action_delete>false</action_delete>
-        <action_insert>true</action_insert>
+        <action_delete>true</action_delete>
+        <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>false</action_update>
         <active>true</active>
@@ -12,14 +12,14 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_134426_emp_user</collection>
+        <collection>x_134426_emp_asset_category</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>On EMP User Create: Add Asset Instances</name>
+        <name>On Asset Category Delete</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,39 +29,34 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	//Get all personnel asset records in a glideRecord.
-	var pAssetRecord = new GlideRecord('x_134426_emp_personnel_asset');
-	pAssetRecord.query();
-	//Instantiate glideRecord to be used for insertion.
-	var pAssetInstanceRecord = new GlideRecord('x_134426_emp_personnel_asset_instance');
-	//Iterate through personnel asset records, creating a new instance record for each.
-	while(pAssetRecord.next()) {
-		pAssetInstanceRecord.initialize();
-		pAssetInstanceRecord.setValue('emp_user', current.getUniqueValue());
-		pAssetInstanceRecord.setValue('personnel_asset', pAssetRecord.getUniqueValue());
-		pAssetInstanceRecord.insert();
+
+	var grPA = new GlideRecord("x_134426_emp_personnel_asset");
+	grPA.addQuery("category", current.sys_id);
+	grPA.query();
+	while(grPA.next()){
+		grPA.deleteRecord();
 	}
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-07-31 15:05:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_created_by>jade.garcia</sys_created_by>
+        <sys_created_on>2017-12-06 17:35:49</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>da419629db100300e5c755d0cf96192b</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_name>On EMP User Create: Add Asset Instances</sys_name>
+        <sys_id>a1bd31f64f728300f78e74828110c762</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>On Asset Category Delete</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
-        <sys_update_name>sys_script_da419629db100300e5c755d0cf96192b</sys_update_name>
+        <sys_update_name>sys_script_a1bd31f64f728300f78e74828110c762</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-11-29 17:01:20</sys_updated_on>
+        <sys_updated_on>2017-12-06 17:53:12</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=da419629db100300e5c755d0cf96192b"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=a1bd31f64f728300f78e74828110c762"/>
 </record_update>

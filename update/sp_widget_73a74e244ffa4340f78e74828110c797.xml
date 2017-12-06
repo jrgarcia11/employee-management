@@ -171,7 +171,7 @@
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-29 18:16:17</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>73a74e244ffa4340f78e74828110c797</sys_id>
         <sys_mod_count>50</sys_mod_count>
         <sys_name>EMP Asset Suggestion Widget</sys_name>

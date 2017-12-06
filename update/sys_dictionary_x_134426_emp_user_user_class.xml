@@ -53,7 +53,7 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-07 19:52:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>02a435684fba4340f78e74828110c770</sys_id>
+        <sys_id>5eda21fa4f328300f78e74828110c792</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>User Class</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
@@ -62,7 +62,7 @@
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sys_dictionary_x_134426_emp_user_user_class</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2017-11-29 16:53:19</sys_updated_on>
+        <sys_updated_on>2017-12-06 15:56:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

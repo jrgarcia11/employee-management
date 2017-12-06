@@ -4,7 +4,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>emp_user</element>
-            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">6ad97d6c4fba4340f78e74828110c757</list_id>
+            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">d70fd6604f3e4340f78e74828110c7fa</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -19,7 +19,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>experience_level</element>
-            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">6ad97d6c4fba4340f78e74828110c757</list_id>
+            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">d70fd6604f3e4340f78e74828110c7fa</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -34,7 +34,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>personnel_asset</element>
-            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">6ad97d6c4fba4340f78e74828110c757</list_id>
+            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">d70fd6604f3e4340f78e74828110c7fa</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -49,7 +49,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>years_of_experience</element>
-            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">6ad97d6c4fba4340f78e74828110c757</list_id>
+            <list_id display_value="x_134426_emp_personnel_asset_instance" element="NULL" name="x_134426_emp_personnel_asset_instance" parent="NULL" relationship="NULL" sys_domain="global" view="45ff4b29db900300e5c755d0cf9619c6">d70fd6604f3e4340f78e74828110c7fa</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -74,7 +74,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>jade.garcia</sys_created_by>
             <sys_created_on>2017-11-29 19:58:23</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>d70fd6604f3e4340f78e74828110c7fa</sys_id>

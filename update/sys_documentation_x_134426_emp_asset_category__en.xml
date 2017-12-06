@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>jade.garcia</sys_created_by>
             <sys_created_on>2017-11-29 19:42:26</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>7d6b5aec4ffa4340f78e74828110c768</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Asset Category</sys_name>

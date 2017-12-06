@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-30 20:08:26</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>e8faa3704f368700ec6c3cb28110c7c0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sys_user_grmember</sys_name>

@@ -105,7 +105,7 @@
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-08 20:19:04</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>fc28685cdba00300e5c755d0cf961965</sys_id>
         <sys_mod_count>97</sys_mod_count>
         <sys_name>EMP Send Hire Form</sys_name>

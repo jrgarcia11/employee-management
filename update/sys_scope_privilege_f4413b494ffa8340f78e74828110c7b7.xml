@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-12-01 15:14:31</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>f4413b494ffa8340f78e74828110c7b7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sysapproval_approver</sys_name>
