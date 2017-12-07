@@ -68,7 +68,6 @@
   margin-bottom: $sp-logo-margin-y;
   display: block;
   max-height: $sp-logo-max-height;
-  max-width: $sp-logo-max-width;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -156,9 +155,9 @@ data.typeahead = $sp.getWidgetFromInstance('typeahead-search');]]></script>
         <sys_class_name>sp_header_footer</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-03 15:29:06</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>191867484f1ac300f78e74828110c727</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>EMP Stock Header</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
@@ -166,20 +165,14 @@ data.typeahead = $sp.getWidgetFromInstance('typeahead-search');]]></script>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sp_header_footer_191867484f1ac300f78e74828110c727</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-12-05 21:55:14</sys_updated_on>
+        <sys_updated_on>2017-12-06 20:38:13</sys_updated_on>
         <template><![CDATA[<div>
-  <nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
-       role="navigation">
+  <nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}" role="navigation">
     <div ng-show="::!isViewNative" class="navbar-header">
-      
-        <a class="navbar-brand" ng-if="::!portal.logo" href="?id={{::portal.homepage_dv}}"><span>{{::portal.title}}</span></a>
-        <a class="navbar-brand" href="/emp?id=emp_my_assets_page"><span>My Assets</span></a>
-        <a ng-if="data.isAdmin" class="navbar-brand" href="/emp?id=emp_admin_page"><span>Admin Tools</span></a>
-      
+      <a class="navbar-brand" ng-if="::!portal.logo" href="?id={{::portal.homepage_dv}}"><span>{{::portal.title}}</span></a>
       <a class="navbar-brand navbar-brand-logo" ng-if="::portal.logo" href="?id={{::portal.homepage_dv}}">
         <img ng-src="{{::portal.logo}}" />
       </a>
-
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sp-nav-bar">
         <span class="sr-only">${Toggle navigation}</span>
         <span class="icon-bar"></span>
@@ -196,6 +189,9 @@ data.typeahead = $sp.getWidgetFromInstance('typeahead-search');]]></script>
       </ul>
       <ul ng-if="::user.logged_in" class="nav navbar-nav">
         <!-- chat, avatar, and logout -->
+        <li class="visible-xs-block"><a ng-href="?id=user_profile&sys_id={{::user.sys_id}}"><span class="navbar-avatar"><sn-avatar class="avatar-small-medium" primary="userID" /></span>{{::user.name}}</a></li>
+        <li><a href="/emp?id=emp_my_assets_page"><span>My Assets</span></a></li>
+        <li><a ng-if="data.isAdmin" href="/emp?id=emp_admin_page"><span>Admin Tools</span></a></li>
         <li ng-if="::data.connect_support_queue_id"><a href ng-click="openPopUp()">${Live Chat}</a></li>
         <li class="dropdown hidden-xs">
           <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
@@ -207,9 +203,6 @@ data.typeahead = $sp.getWidgetFromInstance('typeahead-search');]]></script>
             <li><a href="{{::portal.logoutUrl}}">${Logout}</a></li>
           </ul>
         </li>
-        <li class="visible-xs-block"><a ng-href="?id=user_profile&sys_id={{::user.sys_id}}"><span class="navbar-avatar"><sn-avatar class="avatar-small-medium" primary="userID" /></span>{{::user.name}}</a></li>
-        <li class="visible-xs-block"><a href="/emp?id=emp_my_assets_page"><span>My Assets</span></a></li>
-        <li class="visible-xs-block"><a ng-if="data.isAdmin" href="/emp?id=emp_admin_page"><span>Admin Tools</span></a></li>
         <li class="visible-xs-block"><a href="{{::portal.logoutUrl}}">${Logout}</a></li>
       </ul>
     </div>

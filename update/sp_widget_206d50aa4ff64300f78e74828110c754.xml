@@ -4,6 +4,12 @@
         <client_script><![CDATA[function($scope, $rootScope, spUtil) {
 	/*--widget controller--*/
 	var c = this;
+	
+	c.emp_user = {
+  displayValue: "",
+  value: "",
+  name: 'emp_user_field'
+  };
 
 	/*--updates sys_id after selecting employee from list--*/
 	$scope.$on("field.change", function(evt, parms){
@@ -130,7 +136,27 @@
 			empUser.user_class = "potential_employee"
 			empUser.name = input.empName;
 			empUser.contact_email = input.empEmail;
-			
+			var userRec = new GlideRecord('x_134426_emp_user');
+			userRec.get(empUser.insert());
+
+			var tokenRec = new GlideRecord('x_134426_emp_tokens');
+			tokenRec.addQuery("emp_user", input.empUserSysid);
+			tokenRec.query();
+			if(tokenRec.next()){
+				tokenRec.setValue("used", false);
+				tokenRec.update();
+				gs.addInfoMessage('Refreshed token');
+			}else{
+				//Start processing workflow.
+				var workflow = new global.Workflow();
+				var wfID = workflow.getWorkflowFromName('Applicant Processing');
+				var vars = {};
+				var wfContext = workflow.startFlow(wfID, userRec, userRec.operation(), vars);
+				//Set data sent flag and display success message.
+				data.sent = true;
+				gs.addInfoMessage('Evaluation Sent');
+			}
+
 		}else if(input.empChoice == "employee"){
 			var sysUser = new GlideRecord("sys_user");
 			empUser.user_class = "employee";
@@ -140,9 +166,10 @@
 			sysUser.next();
 			empUser.setValue("name", sysUser.first_name+" "+sysUser.last_name);
 			empUser.contact_email = sysUser.email;
+			empUser.insert();
 		}
 
-		empUser.insert();
+
 	}
 
 })();]]></script>
@@ -150,9 +177,9 @@
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-12-05 15:39:42</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>206d50aa4ff64300f78e74828110c754</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>EMP Admin User Creator</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
@@ -160,7 +187,7 @@
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sp_widget_206d50aa4ff64300f78e74828110c754</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-12-05 17:35:22</sys_updated_on>
+        <sys_updated_on>2017-12-06 21:58:50</sys_updated_on>
         <template><![CDATA[<!--Primary Shell Div (Data IS Present)-->
 <div class ="outerShell">
 

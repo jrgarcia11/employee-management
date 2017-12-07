@@ -2,10 +2,10 @@
 <record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby>personnel_asset.category</additional_groupby>
-        <aggregate>SUM</aggregate>
+        <aggregate>AVG</aggregate>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
-        <bar_unstack>false</bar_unstack>
+        <bar_unstack>true</bar_unstack>
         <chart_background_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</chart_background_color>
         <chart_border_color display_value="LightGrey">65b30308a9fe3dba01ebaa03e87e7cd3</chart_border_color>
         <chart_border_radius>0</chart_border_radius>
@@ -21,7 +21,7 @@
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
-        <column>sys_created_on</column>
+        <column>experience_score</column>
         <compute_percent>aggregate</compute_percent>
         <content/>
         <custom_chart_size>false</custom_chart_size>
@@ -34,10 +34,10 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>personnel_asset</field>
         <field_list/>
-        <filter table="x_134426_emp_personnel_asset_instance">emp_user.user_class=employee^EQ^GROUPBYpersonnel_asset^TRENDBYemp_user,year<item endquery="false" field="emp_user.user_class" goto="false" newquery="false" operator="=" or="false" value="employee"/>
+        <filter table="x_134426_emp_personnel_asset_instance">emp_user.user_class=employee^EQ^GROUPBYpersonnel_asset^TRENDBYyears_of_experience,year<item endquery="false" field="emp_user.user_class" goto="false" newquery="false" operator="=" or="false" value="employee"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
             <item endquery="false" field="" goto="false" newquery="false" operator="GROUPBY" or="false" value="personnel_asset"/>
-            <item endquery="false" field="" goto="false" newquery="false" operator="TRENDBY" or="false" value="emp_user,year"/>
+            <item endquery="false" field="" goto="false" newquery="false" operator="TRENDBY" or="false" value="years_of_experience,year"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -65,7 +65,7 @@
         <report_drilldown/>
         <report_source/>
         <roles/>
-        <row>sys_created_on</row>
+        <row>experience_score</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
         <sc_stackby_item_id/>
@@ -86,9 +86,9 @@
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-07 20:52:36</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>0a362b73dbd00300e5c755d0cf961988</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Skill Set Distribution</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
@@ -96,14 +96,14 @@
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sys_report_0a362b73dbd00300e5c755d0cf961988</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-12-01 19:32:11</sys_updated_on>
+        <sys_updated_on>2017-12-07 15:01:10</sys_updated_on>
         <table>x_134426_emp_personnel_asset_instance</table>
         <title>Skill Set Distribution</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field>emp_user</trend_field>
-        <type>bar</type>
+        <trend_field>years_of_experience</trend_field>
+        <type>box</type>
         <upper_limit/>
         <use_color_heatmap>true</use_color_heatmap>
         <use_color_palette>true</use_color_palette>

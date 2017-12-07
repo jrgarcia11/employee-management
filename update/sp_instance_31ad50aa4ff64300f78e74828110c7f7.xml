@@ -7,17 +7,17 @@
         <css/>
         <glyph/>
         <id/>
-        <order>1</order>
+        <order>0</order>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="3">90e11c264ff64300f78e74828110c7b7</sp_column>
+        <sp_column display_value="2">82743efe4fb28300f78e74828110c768</sp_column>
         <sp_widget display_value="EMP Admin User Creator">206d50aa4ff64300f78e74828110c754</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-12-05 15:40:53</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>31ad50aa4ff64300f78e74828110c7f7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
@@ -25,7 +25,7 @@
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sp_instance_31ad50aa4ff64300f78e74828110c7f7</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-12-05 15:40:53</sys_updated_on>
+        <sys_updated_on>2017-12-06 21:45:29</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters/>

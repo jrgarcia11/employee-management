@@ -10,22 +10,22 @@
         <order>0</order>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="2">d8e11c264ff64300f78e74828110c7b5</sp_column>
-        <sp_widget display_value="EMP Admin Asset Creator">e97154264ff64300f78e74828110c7be</sp_widget>
+        <sp_column display_value="1">06743efe4fb28300f78e74828110c766</sp_column>
+        <sp_widget display_value="EMP Admin Asset Creator v2">76f37a7e4fb28300f78e74828110c739</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
-        <sys_created_on>2017-12-05 14:49:38</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>0fe11c264ff64300f78e74828110c7ff</sys_id>
+        <sys_created_on>2017-12-06 21:18:36</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a2847efe4fb28300f78e74828110c700</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
-        <sys_update_name>sp_instance_0fe11c264ff64300f78e74828110c7ff</sys_update_name>
+        <sys_update_name>sp_instance_a2847efe4fb28300f78e74828110c700</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-12-05 14:50:00</sys_updated_on>
+        <sys_updated_on>2017-12-06 21:45:29</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters/>

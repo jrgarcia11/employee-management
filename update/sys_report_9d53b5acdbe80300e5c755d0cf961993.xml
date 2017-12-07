@@ -34,8 +34,7 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>personnel_asset</field>
         <field_list/>
-        <filter table="x_134426_emp_personnel_asset_instance">^GROUPBYpersonnel_asset^TRENDBYemp_user,year<item endquery="false" field="" goto="false" newquery="false" operator="GROUPBY" or="false" value="personnel_asset"/>
-            <item endquery="false" field="" goto="false" newquery="false" operator="TRENDBY" or="false" value="emp_user,year"/>
+        <filter table="x_134426_emp_personnel_asset_instance">^GROUPBYpersonnel_asset<item endquery="false" field="" goto="false" newquery="false" operator="GROUPBY" or="false" value="personnel_asset"/>
         </filter>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
@@ -58,7 +57,7 @@
         <map_source/>
         <orderby_list/>
         <other_threshold>-1</other_threshold>
-        <others>true</others>
+        <others>false</others>
         <page_hdrftr display_value="Default">0ecdb03fc3613000cef73b251eba8f5e</page_hdrftr>
         <report_drilldown/>
         <report_source/>
@@ -84,9 +83,9 @@
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-09 20:26:06</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>9d53b5acdbe80300e5c755d0cf961993</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Composite Skill Set Distribution</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
@@ -94,13 +93,13 @@
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sys_report_9d53b5acdbe80300e5c755d0cf961993</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-11-17 21:03:05</sys_updated_on>
+        <sys_updated_on>2017-12-07 15:09:04</sys_updated_on>
         <table>x_134426_emp_personnel_asset_instance</table>
         <title>Composite Skill Set Distribution</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field>emp_user</trend_field>
+        <trend_field/>
         <type>bar</type>
         <upper_limit/>
         <use_color_heatmap>true</use_color_heatmap>

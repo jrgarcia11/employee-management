@@ -4,47 +4,47 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>approved</element>
-            <list_id display_value="x_134426_emp_personnel_asset" element="NULL" name="x_134426_emp_personnel_asset" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8e3b653e4f328300f78e74828110c7c0</list_id>
+            <list_id display_value="x_134426_emp_personnel_asset" element="NULL" name="x_134426_emp_personnel_asset" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7592b28f4f7a8300f78e74828110c7c5</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-12-06 15:58:15</sys_created_on>
-            <sys_id>c23b653e4f328300f78e74828110c7c2</sys_id>
+            <sys_created_on>2017-12-07 15:48:33</sys_created_on>
+            <sys_id>b992b28f4f7a8300f78e74828110c7c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-12-06 15:58:15</sys_updated_on>
+            <sys_updated_on>2017-12-07 15:48:33</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>asset_name</element>
-            <list_id display_value="x_134426_emp_personnel_asset" element="NULL" name="x_134426_emp_personnel_asset" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8e3b653e4f328300f78e74828110c7c0</list_id>
+            <list_id display_value="x_134426_emp_personnel_asset" element="NULL" name="x_134426_emp_personnel_asset" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7592b28f4f7a8300f78e74828110c7c5</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-12-06 15:58:15</sys_created_on>
-            <sys_id>ca3b653e4f328300f78e74828110c7c2</sys_id>
+            <sys_created_on>2017-12-07 15:48:33</sys_created_on>
+            <sys_id>3d92b28f4f7a8300f78e74828110c7c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-12-06 15:58:15</sys_updated_on>
+            <sys_updated_on>2017-12-07 15:48:33</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>category</element>
-            <list_id display_value="x_134426_emp_personnel_asset" element="NULL" name="x_134426_emp_personnel_asset" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8e3b653e4f328300f78e74828110c7c0</list_id>
+            <list_id display_value="x_134426_emp_personnel_asset" element="NULL" name="x_134426_emp_personnel_asset" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">7592b28f4f7a8300f78e74828110c7c5</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-12-06 15:58:15</sys_created_on>
-            <sys_id>4e3b653e4f328300f78e74828110c7c2</sys_id>
+            <sys_created_on>2017-12-07 15:48:33</sys_created_on>
+            <sys_id>bd92b28f4f7a8300f78e74828110c7c5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-12-06 15:58:15</sys_updated_on>
+            <sys_updated_on>2017-12-07 15:48:33</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
