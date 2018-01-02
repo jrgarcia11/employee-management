@@ -58,11 +58,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-12-06 17:38:35</sys_created_on>
+            <sys_created_on>2017-12-11 20:51:30</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>b322ca3a4f728300f78e74828110c779</sys_id>
+            <sys_id>e64ed0644fcf0700f78e74828110c7cb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_134426_emp_personnel_asset</sys_name>
             <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
@@ -71,7 +71,7 @@
             <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
             <sys_update_name>sys_ui_list_x_134426_emp_personnel_asset_null</sys_update_name>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-12-06 17:38:35</sys_updated_on>
+            <sys_updated_on>2017-12-11 20:51:30</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

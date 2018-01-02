@@ -2,16 +2,6 @@
 <database>
     <element label="Personnel Asset Instance" max_length="40" name="x_134426_emp_personnel_asset_instance" type="collection">
         <element label="EMP User" max_length="32" name="emp_user" reference="x_134426_emp_user" type="reference"/>
-        <element choice="3" default="0" label="Experience Level" max_length="40" name="experience_level" type="choice">
-            <choice>
-                <element label="0- No Experience" sequence="0" value="0"/>
-                <element label="1- Unexperienced" sequence="1" value="1"/>
-                <element label="2- Slightly Experienced" sequence="2" value="2"/>
-                <element label="3- Moderately Experienced" sequence="3" value="3"/>
-                <element label="4- More Experienced" sequence="4" value="4"/>
-                <element label="5- Highly Experienced" sequence="5" value="5"/>
-            </choice>
-        </element>
         <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var value = current.getValue('experience_level'); //* current.getValue('years_of_experience');&#10;&#9;&#10;&#9;return value;&#10;&#10;})(current);" default="0" label="Interview Rating" max_length="40" name="experience_score" type="float"/>
         <element choice="2" choice_field="category" choice_table="x_134426_emp_personnel_asset" display="true" label="Personnel Asset" max_length="32" name="personnel_asset" reference="x_134426_emp_personnel_asset" type="reference">
             <choice>

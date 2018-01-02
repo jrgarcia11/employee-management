@@ -147,9 +147,13 @@
 		}else if(input.catName){
 			var newCategory = new GlideRecord("x_134426_emp_asset_category");
 			newCategory.initialize();
-			newCategory.category_name = input.catName;
+			if(input.sendEmail)
+				newCategory.category_name = input.catName;
+			else
+				newCategory.category_name = "$"+input.catName;
 			newCategory.sys_created_by = empUser.name;
-			newAsset.category = newCategory.insert();	
+			newAsset.category = newCategory.insert();
+			populateDropdown();
 		}
 		newAsset.sys_created_by = empUser.name;
 		newAsset.approved = true;
@@ -163,7 +167,7 @@
         <sys_created_on>2017-12-06 21:16:10</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>76f37a7e4fb28300f78e74828110c739</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>EMP Admin Asset Creator v2</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
@@ -171,19 +175,22 @@
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sp_widget_76f37a7e4fb28300f78e74828110c739</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-12-06 21:46:18</sys_updated_on>
+        <sys_updated_on>2017-12-11 20:22:36</sys_updated_on>
         <template><![CDATA[<!--Primary Shell Div (Data IS Present)-->
 <div class ="outerShell">
 
   <!--Submitting a new personnel asset instance -->
+  <form name="assetForm" ng-submit="submitResponses()" ng-controller="c">
 
-  <div class="panel panel-default b">
+    <div class="panel panel-default b">
+      <div class="panel-heading form-inline" ng-hide="options.hide_header">
+        <span class="panel-title">Create Asset</span>
+        <label style="float:right;">Notify Users 
+          <input type="checkbox" ng-model="data.sendEmail" ng-checked="true"/>
+        </label>
+        <div class="clearfix"></div>
+      </div>
 
-    <div class="panel-heading form-inline" ng-hide="options.hide_header">
-      <span class="panel-title">Create Asset</span>
-      <div class="clearfix"></div>
-    </div>
-    <form name="assetForm" ng-submit="submitResponses()" ng-controller="c">
       <label>Skill Name: 
         <input type="text" ng-model="data.assetName"/>
       </label>
@@ -204,9 +211,10 @@
         <input type="submit" value="Create"/>
         <span class="clearfix"></span>
       </div>
-    </form>
 
-  </div>
+    </div>
+
+  </form>
 
 </div>]]></template>
     </sp_widget>

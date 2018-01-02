@@ -4,14 +4,14 @@
         <description>Fired in bursts. Sends an email to every row in emp_token table.</description>
         <event_name>x_134426_emp.notifyPotentialHire</event_name>
         <fired_by>Script in "Approving Suggested Assets" Workflow</fired_by>
-        <queue/>
+        <queue>email_emp_user</queue>
         <suffix>notifyPotentialHire</suffix>
         <sys_class_name>sysevent_register</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-30 21:39:17</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>18fb7b784f368700ec6c3cb28110c790</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_134426_emp.notifyPotentialHire</sys_name>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
         <sys_policy/>
@@ -19,7 +19,7 @@
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sysevent_register_18fb7b784f368700ec6c3cb28110c790</sys_update_name>
         <sys_updated_by>jade.garcia</sys_updated_by>
-        <sys_updated_on>2017-11-30 21:39:17</sys_updated_on>
+        <sys_updated_on>2017-12-11 20:05:51</sys_updated_on>
         <table/>
     </sysevent_register>
 </record_update>

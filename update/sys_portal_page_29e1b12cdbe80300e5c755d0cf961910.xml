@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<record_update node_type="sys_portal_page" unload_date="2017-12-07 19:02:13">
+<record_update node_type="sys_portal_page" unload_date="2018-01-02 15:43:29">
     <sys_portal_page action="INSERT_OR_UPDATE">
         <layout/>
         <order/>
-        <read_roles>x_134426_emp.admin</read_roles>
+        <read_roles>x_134426_emp.employee</read_roles>
         <roles>x_134426_emp.admin</roles>
         <selectable>false</selectable>
         <sys_class_name>sys_portal_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-08-09 20:20:28</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>29e1b12cdbe80300e5c755d0cf961910</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Composite Reports</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
@@ -21,191 +21,100 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
         <sys_update_name>sys_portal_page_29e1b12cdbe80300e5c755d0cf961910</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-09 20:20:31</sys_updated_on>
+        <sys_updated_by>jade.garcia</sys_updated_by>
+        <sys_updated_on>2017-12-08 20:43:14</sys_updated_on>
         <title>Composite Reports</title>
         <user/>
         <view>emp_reporting_composite</view>
         <related_items_node>
             <sys_portal action="INSERT_OR_UPDATE">
-                <dropzone>dropzone999</dropzone>
-                <offset>0</offset>
-                <page display_value="Composite Reports">29e1b12cdbe80300e5c755d0cf961910</page>
-                <summary/>
-                <sys_created_by>admin</sys_created_by>
-                <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                <sys_id>be0cb9e0db2c0300e5c755d0cf9619ee</sys_id>
-                <sys_mod_count>0</sys_mod_count>
-                <sys_updated_by>admin</sys_updated_by>
-                <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                <related_items_node>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>sys_id</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">be0cb9e0db2c0300e5c755d0cf9619ee</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>320cb9e0db2c0300e5c755d0cf9619ef</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>faeb39e0db2c0300e5c755d0cf961986</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>title</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">be0cb9e0db2c0300e5c755d0cf9619ee</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>320cb9e0db2c0300e5c755d0cf9619f1</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>Composite Certifications</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>can_subscribe</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">be0cb9e0db2c0300e5c755d0cf9619ee</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>360cb9e0db2c0300e5c755d0cf9619f0</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>true</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>renderer</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">be0cb9e0db2c0300e5c755d0cf9619ee</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>3a0cb9e0db2c0300e5c755d0cf9619ef</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>com.glide.ui.portal.RenderReport</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>current_page</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">be0cb9e0db2c0300e5c755d0cf9619ee</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>3a0cb9e0db2c0300e5c755d0cf9619f1</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>29e1b12cdbe80300e5c755d0cf961910</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>report_type</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">be0cb9e0db2c0300e5c755d0cf9619ee</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>ba0cb9e0db2c0300e5c755d0cf9619f0</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>list</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>help_text_window</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">be0cb9e0db2c0300e5c755d0cf9619ee</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>be0cb9e0db2c0300e5c755d0cf9619ef</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>report_widget_description</value>
-                    </sys_portal_preferences>
-                </related_items_node>
-            </sys_portal>
-            <sys_portal action="INSERT_OR_UPDATE">
                 <dropzone>dropzone0</dropzone>
                 <offset>0</offset>
                 <page display_value="Composite Reports">29e1b12cdbe80300e5c755d0cf961910</page>
                 <summary/>
-                <sys_created_by>admin</sys_created_by>
-                <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                <sys_id>f20cb9e0db2c0300e5c755d0cf9619eb</sys_id>
+                <sys_created_by>jade.garcia</sys_created_by>
+                <sys_created_on>2017-12-08 20:34:38</sys_created_on>
+                <sys_id>16adfc6f4ff68b00ec6c3cb28110c796</sys_id>
                 <sys_mod_count>0</sys_mod_count>
-                <sys_updated_by>admin</sys_updated_by>
-                <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
+                <sys_updated_by>jade.garcia</sys_updated_by>
+                <sys_updated_on>2017-12-08 20:34:38</sys_updated_on>
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>help_text_window</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">f20cb9e0db2c0300e5c755d0cf9619eb</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>720cb9e0db2c0300e5c755d0cf9619ec</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>report_widget_description</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>current_page</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">f20cb9e0db2c0300e5c755d0cf9619eb</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>720cb9e0db2c0300e5c755d0cf9619ee</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>29e1b12cdbe80300e5c755d0cf961910</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>sys_id</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">f20cb9e0db2c0300e5c755d0cf9619eb</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>760cb9e0db2c0300e5c755d0cf9619eb</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>9d53b5acdbe80300e5c755d0cf961993</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>title</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">f20cb9e0db2c0300e5c755d0cf9619eb</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>7a0cb9e0db2c0300e5c755d0cf9619ed</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>Composite Skill Set Distribution</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>report_type</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">f20cb9e0db2c0300e5c755d0cf9619eb</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>7e0cb9e0db2c0300e5c755d0cf9619ec</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
-                        <value>bar</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>can_subscribe</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">f20cb9e0db2c0300e5c755d0cf9619eb</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>f20cb9e0db2c0300e5c755d0cf9619ed</sys_id>
+                        <portal_section display_value="Created 2017-12-08 12:34:38">16adfc6f4ff68b00ec6c3cb28110c796</portal_section>
+                        <sys_created_by>jade.garcia</sys_created_by>
+                        <sys_created_on>2017-12-08 20:34:38</sys_created_on>
+                        <sys_id>16adfc6f4ff68b00ec6c3cb28110c798</sys_id>
                         <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
+                        <sys_updated_by>jade.garcia</sys_updated_by>
+                        <sys_updated_on>2017-12-08 20:34:38</sys_updated_on>
                         <value>true</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>renderer</name>
-                        <portal_section display_value="Created 2017-08-09 14:04:09">f20cb9e0db2c0300e5c755d0cf9619eb</portal_section>
-                        <sys_created_by>admin</sys_created_by>
-                        <sys_created_on>2017-08-09 21:04:09</sys_created_on>
-                        <sys_id>f60cb9e0db2c0300e5c755d0cf9619ec</sys_id>
+                        <portal_section display_value="Created 2017-12-08 12:34:38">16adfc6f4ff68b00ec6c3cb28110c796</portal_section>
+                        <sys_created_by>jade.garcia</sys_created_by>
+                        <sys_created_on>2017-12-08 20:34:38</sys_created_on>
+                        <sys_id>1aadfc6f4ff68b00ec6c3cb28110c797</sys_id>
                         <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>admin</sys_updated_by>
-                        <sys_updated_on>2017-08-09 21:04:09</sys_updated_on>
+                        <sys_updated_by>jade.garcia</sys_updated_by>
+                        <sys_updated_on>2017-12-08 20:34:38</sys_updated_on>
                         <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 2017-12-08 12:34:38">16adfc6f4ff68b00ec6c3cb28110c796</portal_section>
+                        <sys_created_by>jade.garcia</sys_created_by>
+                        <sys_created_on>2017-12-08 20:34:38</sys_created_on>
+                        <sys_id>92ad70af4ff68b00ec6c3cb28110c727</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>jade.garcia</sys_updated_by>
+                        <sys_updated_on>2017-12-08 20:34:38</sys_updated_on>
+                        <value>29e1b12cdbe80300e5c755d0cf961910</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2017-12-08 12:34:38">16adfc6f4ff68b00ec6c3cb28110c796</portal_section>
+                        <sys_created_by>jade.garcia</sys_created_by>
+                        <sys_created_on>2017-12-08 20:34:38</sys_created_on>
+                        <sys_id>92adfc6f4ff68b00ec6c3cb28110c797</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>jade.garcia</sys_updated_by>
+                        <sys_updated_on>2017-12-08 20:34:38</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2017-12-08 12:34:38">16adfc6f4ff68b00ec6c3cb28110c796</portal_section>
+                        <sys_created_by>jade.garcia</sys_created_by>
+                        <sys_created_on>2017-12-08 20:34:38</sys_created_on>
+                        <sys_id>96adfc6f4ff68b00ec6c3cb28110c796</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>jade.garcia</sys_updated_by>
+                        <sys_updated_on>2017-12-08 20:34:38</sys_updated_on>
+                        <value>9d53b5acdbe80300e5c755d0cf961993</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2017-12-08 12:34:38">16adfc6f4ff68b00ec6c3cb28110c796</portal_section>
+                        <sys_created_by>jade.garcia</sys_created_by>
+                        <sys_created_on>2017-12-08 20:34:38</sys_created_on>
+                        <sys_id>9aad70af4ff68b00ec6c3cb28110c726</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>jade.garcia</sys_updated_by>
+                        <sys_updated_on>2017-12-08 20:34:38</sys_updated_on>
+                        <value>Composite Skill Set Distribution</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2017-12-08 12:34:38">16adfc6f4ff68b00ec6c3cb28110c796</portal_section>
+                        <sys_created_by>jade.garcia</sys_created_by>
+                        <sys_created_on>2017-12-08 20:34:38</sys_created_on>
+                        <sys_id>9eadfc6f4ff68b00ec6c3cb28110c797</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>jade.garcia</sys_updated_by>
+                        <sys_updated_on>2017-12-08 20:34:38</sys_updated_on>
+                        <value>bar</value>
                     </sys_portal_preferences>
                 </related_items_node>
             </sys_portal>
