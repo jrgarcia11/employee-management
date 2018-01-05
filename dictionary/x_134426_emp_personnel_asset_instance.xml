@@ -2,7 +2,8 @@
 <database>
     <element label="Personnel Asset Instance" max_length="40" name="x_134426_emp_personnel_asset_instance" type="collection">
         <element label="EMP User" max_length="32" name="emp_user" reference="x_134426_emp_user" type="reference"/>
-        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var value = current.getValue('experience_level'); //* current.getValue('years_of_experience');&#10;&#9;&#10;&#9;return value;&#10;&#10;})(current);" default="0" label="Interview Rating" max_length="40" name="experience_score" type="float"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var value = current.getValue('experience_level'); //* current.getValue('years_of_experience');&#10;&#9;&#10;&#9;return value;&#10;&#10;})(current);" default="0" label="Experience Score" max_length="40" name="experience_score" type="float"/>
+        <element default="0" label="Graded Score" max_length="40" name="graded_score" type="float"/>
         <element choice="2" choice_field="category" choice_table="x_134426_emp_personnel_asset" display="true" label="Personnel Asset" max_length="32" name="personnel_asset" reference="x_134426_emp_personnel_asset" type="reference">
             <choice>
                 <element label="Technical" sequence="0" value="technical"/>
@@ -10,7 +11,7 @@
                 <element label="Administrative" sequence="2" value="administrative"/>
             </choice>
         </element>
-        <element default="0" label="Self Rating" max_length="40" name="years_of_experience" type="float"/>
+        <element default="0" label="Years of Experience" max_length="40" name="years_of_experience" type="float"/>
         <index name="index">
             <element name="personnel_asset"/>
         </index>

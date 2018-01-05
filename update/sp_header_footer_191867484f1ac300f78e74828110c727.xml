@@ -155,7 +155,7 @@ data.typeahead = $sp.getWidgetFromInstance('typeahead-search');]]></script>
         <sys_class_name>sp_header_footer</sys_class_name>
         <sys_created_by>jade.garcia</sys_created_by>
         <sys_created_on>2017-11-03 15:29:06</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>191867484f1ac300f78e74828110c727</sys_id>
         <sys_mod_count>41</sys_mod_count>
         <sys_name>EMP Stock Header</sys_name>

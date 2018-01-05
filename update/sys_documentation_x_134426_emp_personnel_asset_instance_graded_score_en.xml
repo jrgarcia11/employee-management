@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="experience_score" label="Experience Score" language="en" table="x_134426_emp_personnel_asset_instance">
+    <sys_documentation element="graded_score" label="Graded Score" language="en" table="x_134426_emp_personnel_asset_instance">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>experience_score</element>
+            <element>graded_score</element>
             <help/>
             <hint/>
-            <label>Experience Score</label>
+            <label>Graded Score</label>
             <language>en</language>
             <name>x_134426_emp_personnel_asset_instance</name>
-            <plural>Experience Scores</plural>
+            <plural>Graded Scores</plural>
             <sys_class_name>sys_documentation</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-28 21:31:05</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
-            <sys_id>542f88fcdb144300e5c755d0cf961915</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_name>Experience Score</sys_name>
+            <sys_created_by>jade.garcia</sys_created_by>
+            <sys_created_on>2018-01-03 21:17:10</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>feb00f3b4f930b40ec6c3cb28110c719</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Graded Score</sys_name>
             <sys_package display_value="Employee Management Portal" source="x_134426_emp">06136fe0dbd04300e5c755d0cf961930</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Employee Management Portal">06136fe0dbd04300e5c755d0cf961930</sys_scope>
-            <sys_update_name>sys_documentation_x_134426_emp_personnel_asset_instance_experience_score_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_134426_emp_personnel_asset_instance_graded_score_en</sys_update_name>
             <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2018-01-04 22:00:12</sys_updated_on>
+            <sys_updated_on>2018-01-03 21:17:10</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

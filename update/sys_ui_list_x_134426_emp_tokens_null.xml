@@ -1,51 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_134426_emp_tokens" version="2" view="">
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>number</element>
-            <list_id display_value="x_134426_emp_tokens" element="NULL" name="x_134426_emp_tokens" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1a28e24b4f7a8300f78e74828110c7c3</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>0</position>
-            <sum>false</sum>
-            <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-12-07 15:02:59</sys_created_on>
-            <sys_id>de28e24b4f7a8300f78e74828110c7c3</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-12-07 15:02:59</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>emp_user</element>
-            <list_id display_value="x_134426_emp_tokens" element="NULL" name="x_134426_emp_tokens" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1a28e24b4f7a8300f78e74828110c7c3</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>1</position>
-            <sum>false</sum>
-            <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-12-07 15:02:59</sys_created_on>
-            <sys_id>5228e24b4f7a8300f78e74828110c7c4</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-12-07 15:02:59</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>used</element>
-            <list_id display_value="x_134426_emp_tokens" element="NULL" name="x_134426_emp_tokens" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1a28e24b4f7a8300f78e74828110c7c3</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>2</position>
-            <sum>false</sum>
-            <sys_created_by>jade.garcia</sys_created_by>
-            <sys_created_on>2017-12-07 15:02:59</sys_created_on>
-            <sys_id>d228e24b4f7a8300f78e74828110c7c4</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>jade.garcia</sys_updated_by>
-            <sys_updated_on>2017-12-07 15:02:59</sys_updated_on>
-        </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element/>
@@ -59,7 +14,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>jade.garcia</sys_created_by>
             <sys_created_on>2017-11-30 20:24:33</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a0aeaff04f368700ec6c3cb28110c737</sys_id>
